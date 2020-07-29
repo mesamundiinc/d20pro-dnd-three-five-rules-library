@@ -1,0 +1,722 @@
+<com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>
+  <id>11351f2a-8d12-440b-9e27-06583df5194d</id>
+  <__name>Bard</__name>
+  <__classType>
+    <string>Class</string>
+  </__classType>
+  <__isDirty>false</__isDirty>
+  <__attackRate>0.75</__attackRate>
+  <__attackProgression>
+    <float>0.75</float>
+    <float>1.0</float>
+  </__attackProgression>
+  <__hitDie>d6</__hitDie>
+  <__savingThrows>
+    <string>Ref</string>
+    <string>Will</string>
+  </__savingThrows>
+  <__armor/>
+  <__weapons/>
+  <__skills/>
+  <__tools/>
+  <__traits>
+    <entry>
+      <string>1bardic musicbard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1bardic musicbard</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Bardic Music</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>18mass suggestionbard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">18mass suggestionbard</key>
+        <level class="int">18</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Mass Suggestion</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1inspire courage +1bard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1inspire courage +1bard</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Courage +1</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>8inspire courage +2bard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">8inspire courage +2bard</key>
+        <level class="int">8</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Courage +2</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>12song of freedombard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">12song of freedombard</key>
+        <level class="int">12</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Song of Freedom</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1bardic knowledgebard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1bardic knowledgebard</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Bardic Knowledge</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>15inspire heroicsbard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">15inspire heroicsbard</key>
+        <level class="int">15</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Heroics</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>3inspire competencebard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">3inspire competencebard</key>
+        <level class="int">3</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Competence</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>20inspire courage +4bard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">20inspire courage +4bard</key>
+        <level class="int">20</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Courage +4</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1countersongbard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1countersongbard</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Countersong</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>14inspire courage +3bard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">14inspire courage +3bard</key>
+        <level class="int">14</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Courage +3</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>6suggestionbard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">6suggestionbard</key>
+        <level class="int">6</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Suggestion</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>9inspire greatnessbard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">9inspire greatnessbard</key>
+        <level class="int">9</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Inspire Greatness</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1fascinatebard</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1fascinatebard</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Fascinate</name>
+        <pools class="list"/>
+        <product class="string">Bard</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Bard</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Bard</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+  </__traits>
+  <__variantOfClass></__variantOfClass>
+  <__variants/>
+  <__special/>
+  <__spellCasting class="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared"/>
+  <__primaryAbility>
+    <string>Int</string>
+  </__primaryAbility>
+  <__secondaryAbility/>
+  <__rules></__rules>
+  <__type>CREATURE_CLASS</__type>
+  <__source>v.3.9</__source>
+  <__product>D&amp;D 3.5 Core Rulebook</__product>
+  <__properties class="linked-hash-map">
+    <entry>
+      <string>AttackRate</string>
+      <string>.75</string>
+    </entry>
+    <entry>
+      <string>HitDie</string>
+      <string>d6</string>
+    </entry>
+    <entry>
+      <string>CreatureClassType</string>
+      <string>Class</string>
+    </entry>
+    <entry>
+      <string>PrimaryAbility</string>
+      <string>Int</string>
+    </entry>
+    <entry>
+      <string>Features</string>
+      <string>Bard</string>
+    </entry>
+    <entry>
+      <string>SavingThrows</string>
+      <string>Ref|Will</string>
+    </entry>
+    <entry>
+      <string>SpellCaster</string>
+      <string>com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT</string>
+    </entry>
+    <entry>
+      <string>CreatureClass</string>
+      <string>Bard</string>
+    </entry>
+    <entry>
+      <string>source</string>
+      <string>v.3.9</string>
+    </entry>
+    <entry>
+      <string>product</string>
+      <string>D&amp;D 3.5 Core Rulebook</string>
+    </entry>
+  </__properties>
+  <__rawSource>## Creature Class Template: New Template
+## Class/Race/Template Name
+## NOTE ## Template name must match the name on this line
+CreatureClass=Bard
+
+## Optional ## Define the type or types of the current creature class template.
+CreatureClassType=Class
+
+## Required ## Define the attack rate ratio as a decimal value 1.0 = +1 per level, .5 is +1 every 2 levels
+AttackRate=.75
+
+## Required ## Hit die per level and hit die type in die format
+HitDie=d6
+
+## Optional ## List saving throw(s) which benefit from a good/trained status as a piped list
+SavingThrows=Ref|Will
+
+## Optional ## List the primary ability/abilities as a piped list
+PrimaryAbility=Int
+
+## Optional ## List the secondary ability/abilities as a piped list
+SecondaryAbility=
+
+## NOTE ## The following four entries are not currently used to pre-populate characters; However
+## that will change in a near future release. 
+## Optional ## List Skill options as a piped list
+Skills=
+
+## Optional ## List Tool options as a piped list
+Tools=
+
+## Optional ## List Armor options as a piped list
+Armor=
+
+## Optional ## List Weapon options as a piped list
+Weapons=
+
+## Optional ## List the parent class this template is a variant of
+VariantOfClass=
+
+## Optional ## List all variants of the current creature class as a piped list
+Variants=
+
+## REQUIRED ## Features for class header
+Features=Bard
+
+## FEATURES BY LEVEL ## List features in Feature&lt;level&gt;=piped|list|of|features format
+Features0=
+Features1=Bardic Music|Inspire Courage +1|Bardic Knowledge|Countersong|Fascinate
+Features2=
+Features3=Inspire Competence
+Features4=
+Features5=
+Features6=Suggestion
+Features7=
+Features8=Inspire Courage +2
+Features9=Inspire Greatness
+Features10=
+Features11=
+Features12=Song of Freedom
+Features13=
+Features14=Inspire Courage +3
+Features15=Inspire Heroics
+Features16=
+Features17=
+Features18=Mass Suggestion
+Features19=
+Features20=Inspire Courage +4
+
+## Optional ## Define the spellcasting template and ability score override to use.
+## NOTE ## this is not required when a Primary Ability line is definied; The FIRST 
+## ability in the Primary Ability line will be used with a default casting template
+## SpellCaster=com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT
+
+## Optional ## Override the system specific Maximum Class Level or define a local Max
+MaxClassLevel=20
+
+## Optional ## GLOBAL SPELLCASTING SETTINGS
+
+## Sets the max spell level for Spell Lists (excluding Special/Domain)
+MaxSpellLevel=6
+
+## Set to true to collapse prepared Special and Spell lists into one casting pool
+SpellUseAllSpellsInLine=true
+
+## Set to true to use Cast and Keep spell memoriztion versus cast and forget
+SpellUseListMemorization=true
+
+## Set to true to keep spells in memory even after having cast them.
+KeepSpellsInMemory=true
+
+## Use to define the SpellCaster Classes capabilities
+## Set to true to use Prepared spell mechanics
+SpellCasterUsePrepared=true
+
+## Set to true to use known/learned spell system
+SpellCasterUseKnown=true
+
+## Set to true to enable domain logic for paths, oaths, circles, bloodlines, etc.
+SpellCasterUseSpecial=true
+
+## Use to define the Spell Editor tab names
+SpellCasterLabels=Spells Prepared|Spells Known|Special
+
+## Show spells per spell level UI
+SpellCasterUseSlots=true
+
+## Set to true to enable trait/pool based casting -- leave false for now!
+SpellCasterUsePools=false
+
+## Define Spell Lists as List Name|List Name|etc
+SpellLists=Spells
+
+## Set the spell cost by spell level
+##           Spell Level  C|1|2|3|4|5|6
+OverrideSpellCostsByLevel=0|1|1|1|1|1|1
+
+## Spells available by spell level as a piped list of spells possible
+Spells0=Dancing Lights|Daze|Detect Magic|Flare|Ghost Sound|Know Direction|Light|Lullaby|Mage Hand|Mending|Message|Open/Close|Prestidigitation|Read Magic|Resistance|Summon Instrument
+Spells1=Alarm|Animate Rope|Cause Fear|Charm Person|Comprehend Languages|Cure Light Wounds|Detect Secret Doors|Disguise Self|Erase|Expeditious Retreat|Feather Fall|Grease|Hypnotism|Identify|Confusion, Lesser|Magic Mouth|Magic Aura|Obscure Object|Remove Fear|Silent Image|Sleep|Summon Monster I|Hideous Laughter|Undetectable Alignment|Unseen Servant|Ventriloquism
+Spells2=Alter Self|Animal Messenger|Animal Trance|Blindness/Deafness|Blur|Calm Emotions|Cat&apos;s Grace|Cure Moderate Wounds|Darkness|Daze Monster|Delay Poison|Detect Thoughts|Eagle&apos;s Splendor|Enthrall|Fox&apos;s Cunning|Glitterdust|Heroism|Hold Person|Hypnotic Pattern|Invisibility|Locate Object|Minor Image|Mirror Image|Misdirection|Pyrotechnics|Rage|Scare|Shatter|Silence|Sound Burst|Suggestion|Summon Monster II|Summon Swarm|Tongues|Whispering Wind
+Spells3=Blink|Charm Monster|Clairaudience/Clairvoyance|Confusion|Crushing Despair|Cure Serious Wounds|Daylight|Deep Slumber|Dispel Magic|Displacement|Fear|Gaseous Form|Geas, Lesser|Glibness|Good Hope|Haste|Illusory Script|Invisibility Sphere|Tiny Hut|Major Image|Phantom Steed|Remove Curse|Scrying|Sculpt Sound|Secret Page|See Invisibility|Sepia Snake Sigil|Slow|Speak with Animals|Summon Monster III
+Spells4=Break Enchantment|Cure Critical Wounds|Detect Scrying|Dimension Door|Freedom of Movement|Hallucinatory Terrain|Hold Monster|Invisibility, Greater|Legend Lore|Secure Shelter|Locate Creature|Modify Memory|Neutralize Poison|Rainbow Pattern|Repel Vermin|Shadow Conjuration|Shout|Speak with Plants|Summon Monster IV|Zone of Silence
+Spells5=Cure Light Wounds, Mass|Dispel Magic, Greater|Dream|False Vision|Heroism, Greater|Mind Fog|Mirage Arcana|Mislead|Nightmare|Persistent Image|Seeming|Shadow Evocation|Shadow Walk|Song of Discord|Suggestion, Mass|Summon Monster V
+Spells6=Analyze Dweomer|Animate Objects|Cat&apos;s Grace, Mass|Charm Monster, Mass|Eagle&apos;s Splendor, Mass|Eyebite|Find the Path|Fox&apos;s Cunning, Mass|Geas/Quest|Otto&apos;s Irresistible Dance|Permanent Image|Programmed Image|Project Image|Scrying, Greater|Shout, Greater|Summon Monster VI|Sympathetic Vibration|Veil
+
+
+
+ Prepared1=2
+ Prepared2=3|0
+ Prepared3=3|1
+ Prepared4=3|2|0
+ Prepared5=3|3|1
+ Prepared6=3|3|2
+ Prepared7=3|3|2|0
+ Prepared8=3|3|3|1
+ Prepared9=3|3|3|2
+Prepared10=3|3|3|2|0
+Prepared11=3|3|3|3|1
+Prepared12=3|3|3|3|2
+Prepared13=3|3|3|3|2|0
+Prepared14=4|3|3|3|2|1
+Prepared15=4|4|3|3|3|2
+Prepared16=4|4|4|3|3|2|0
+Prepared17=4|4|4|4|3|3|1
+Prepared18=4|4|4|4|4|3|2
+Prepared19=4|4|4|4|4|4|3
+Prepared20=4|4|4|4|4|4|4
+
+## Spells Per Day by caster level as a piped list by spell level
+##        | | | | | | 
+##       0|1|2|3|4|5|6
+ PerDay1=2
+ PerDay2=3|0
+ PerDay3=3|1
+ PerDay4=3|2|0
+ PerDay5=3|3|1
+ PerDay6=3|3|2
+ PerDay7=3|3|2|0
+ PerDay8=3|3|3|1
+ PerDay9=3|3|3|2
+PerDay10=3|3|3|2|0
+PerDay11=3|3|3|3|1
+PerDay12=3|3|3|3|2
+PerDay13=3|3|3|3|2|0
+PerDay14=4|3|3|3|2|1
+PerDay15=4|4|3|3|3|2
+PerDay16=4|4|4|3|3|2|0
+PerDay17=4|4|4|4|3|3|1
+PerDay18=4|4|4|4|4|3|2
+PerDay19=4|4|4|4|4|4|3
+PerDay20=4|4|4|4|4|4|4
+##        | | | | | | 
+##       0|1|2|3|4|5|6
+
+## Spells known by caster level as a piped list by spell level
+##       | | | | | | 
+##      0|1|2|3|4|5|6
+ Known1=4
+ Known2=5|2
+ Known3=6|3
+ Known4=6|3|2
+ Known5=6|4|3
+ Known6=6|4|3
+ Known7=6|4|4|2
+ Known8=6|4|4|3
+ Known9=6|4|4|3
+Known10=6|4|4|4|2
+Known11=6|4|4|4|3
+Known12=6|4|4|4|3
+Known13=6|4|4|4|4|2
+Known14=6|4|4|4|4|3
+Known15=6|4|4|4|4|3
+Known16=6|4|4|4|4|4|2
+Known17=6|5|5|4|4|4|3
+Known18=6|5|5|5|4|4|3
+Known19=6|5|5|5|5|4|4
+Known20=6|5|5|5|5|5|3
+##      0|1|2|3|4|5|6
+##       | | | | | | </__rawSource>
+  <__rawProperties>
+    <property name="OverrideSpellCostsByLevel" value="0|1|1|1|1|1|1"/>
+    <property name="SpellCaster" value="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT"/>
+    <property name="MaxSpellLevel" value="6"/>
+    <property name="Prepared9" value="3|3|3|2"/>
+    <property name="Known20" value="6|5|5|5|5|5|3"/>
+    <property name="Prepared8" value="3|3|3|1"/>
+    <property name="Spells6" value="Analyze Dweomer|Animate Objects|Cat&apos;s Grace, Mass|Charm Monster, Mass|Eagle&apos;s Splendor, Mass|Eyebite|Find the Path|Fox&apos;s Cunning, Mass|Geas/Quest|Otto&apos;s Irresistible Dance|Permanent Image|Programmed Image|Project Image|Scrying, Greater|Shout, Greater|Summon Monster VI|Sympathetic Vibration|Veil"/>
+    <property name="Prepared7" value="3|3|2|0"/>
+    <property name="Spells5" value="Cure Light Wounds, Mass|Dispel Magic, Greater|Dream|False Vision|Heroism, Greater|Mind Fog|Mirage Arcana|Mislead|Nightmare|Persistent Image|Seeming|Shadow Evocation|Shadow Walk|Song of Discord|Suggestion, Mass|Summon Monster V"/>
+    <property name="Prepared6" value="3|3|2"/>
+    <property name="Spells4" value="Break Enchantment|Cure Critical Wounds|Detect Scrying|Dimension Door|Freedom of Movement|Hallucinatory Terrain|Hold Monster|Invisibility, Greater|Legend Lore|Secure Shelter|Locate Creature|Modify Memory|Neutralize Poison|Rainbow Pattern|Repel Vermin|Shadow Conjuration|Shout|Speak with Plants|Summon Monster IV|Zone of Silence"/>
+    <property name="Prepared5" value="3|3|1"/>
+    <property name="Spells3" value="Blink|Charm Monster|Clairaudience/Clairvoyance|Confusion|Crushing Despair|Cure Serious Wounds|Daylight|Deep Slumber|Dispel Magic|Displacement|Fear|Gaseous Form|Geas, Lesser|Glibness|Good Hope|Haste|Illusory Script|Invisibility Sphere|Tiny Hut|Major Image|Phantom Steed|Remove Curse|Scrying|Sculpt Sound|Secret Page|See Invisibility|Sepia Snake Sigil|Slow|Speak with Animals|Summon Monster III"/>
+    <property name="Prepared4" value="3|2|0"/>
+    <property name="Spells2" value="Alter Self|Animal Messenger|Animal Trance|Blindness/Deafness|Blur|Calm Emotions|Cat&apos;s Grace|Cure Moderate Wounds|Darkness|Daze Monster|Delay Poison|Detect Thoughts|Eagle&apos;s Splendor|Enthrall|Fox&apos;s Cunning|Glitterdust|Heroism|Hold Person|Hypnotic Pattern|Invisibility|Locate Object|Minor Image|Mirror Image|Misdirection|Pyrotechnics|Rage|Scare|Shatter|Silence|Sound Burst|Suggestion|Summon Monster II|Summon Swarm|Tongues|Whispering Wind"/>
+    <property name="KeepSpellsInMemory" value="true"/>
+    <property name="Prepared3" value="3|1"/>
+    <property name="SpellCasterUsePrepared" value="true"/>
+    <property name="Spells1" value="Alarm|Animate Rope|Cause Fear|Charm Person|Comprehend Languages|Cure Light Wounds|Detect Secret Doors|Disguise Self|Erase|Expeditious Retreat|Feather Fall|Grease|Hypnotism|Identify|Confusion, Lesser|Magic Mouth|Magic Aura|Obscure Object|Remove Fear|Silent Image|Sleep|Summon Monster I|Hideous Laughter|Undetectable Alignment|Unseen Servant|Ventriloquism"/>
+    <property name="product" value="D&amp;D 3.5 Core Rulebook"/>
+    <property name="Prepared2" value="3|0"/>
+    <property name="Spells0" value="Dancing Lights|Daze|Detect Magic|Flare|Ghost Sound|Know Direction|Light|Lullaby|Mage Hand|Mending|Message|Open/Close|Prestidigitation|Read Magic|Resistance|Summon Instrument"/>
+    <property name="Prepared1" value="2"/>
+    <property name="SpellUseListMemorization" value="true"/>
+    <property name="Known19" value="6|5|5|5|5|4|4"/>
+    <property name="Known18" value="6|5|5|5|4|4|3"/>
+    <property name="Known17" value="6|5|5|4|4|4|3"/>
+    <property name="Known16" value="6|4|4|4|4|4|2"/>
+    <property name="Known15" value="6|4|4|4|4|3"/>
+    <property name="PrimaryAbility" value="Int"/>
+    <property name="Known14" value="6|4|4|4|4|3"/>
+    <property name="Known13" value="6|4|4|4|4|2"/>
+    <property name="Known12" value="6|4|4|4|3"/>
+    <property name="Known11" value="6|4|4|4|3"/>
+    <property name="Known10" value="6|4|4|4|2"/>
+    <property name="SpellUseAllSpellsInLine" value="true"/>
+    <property name="CreatureClass" value="Bard"/>
+    <property name="Features20" value="Inspire Courage +4"/>
+    <property name="SpellLists" value="Spells"/>
+    <property name="Features" value="Bard"/>
+    <property name="Features18" value="Mass Suggestion"/>
+    <property name="Features15" value="Inspire Heroics"/>
+    <property name="Features14" value="Inspire Courage +3"/>
+    <property name="AttackRate" value=".75"/>
+    <property name="Features12" value="Song of Freedom"/>
+    <property name="Features9" value="Inspire Greatness"/>
+    <property name="Features8" value="Inspire Courage +2"/>
+    <property name="Features6" value="Suggestion"/>
+    <property name="Features3" value="Inspire Competence"/>
+    <property name="Features1" value="Bardic Music|Inspire Courage +1|Bardic Knowledge|Countersong|Fascinate"/>
+    <property name="PerDay20" value="4|4|4|4|4|4|4"/>
+    <property name="SpellCasterUsePools" value="false"/>
+    <property name="SpellCasterLabels" value="Spells Prepared|Spells Known|Special"/>
+    <property name="Prepared20" value="4|4|4|4|4|4|4"/>
+    <property name="SpellCasterUseSlots" value="true"/>
+    <property name="PerDay19" value="4|4|4|4|4|4|3"/>
+    <property name="HitDie" value="d6"/>
+    <property name="PerDay18" value="4|4|4|4|4|3|2"/>
+    <property name="PerDay17" value="4|4|4|4|3|3|1"/>
+    <property name="PerDay16" value="4|4|4|3|3|2|0"/>
+    <property name="PerDay15" value="4|4|3|3|3|2"/>
+    <property name="PerDay14" value="4|3|3|3|2|1"/>
+    <property name="PerDay13" value="3|3|3|3|2|0"/>
+    <property name="Prepared19" value="4|4|4|4|4|4|3"/>
+    <property name="PerDay12" value="3|3|3|3|2"/>
+    <property name="Prepared18" value="4|4|4|4|4|3|2"/>
+    <property name="PerDay11" value="3|3|3|3|1"/>
+    <property name="Prepared17" value="4|4|4|4|3|3|1"/>
+    <property name="PerDay10" value="3|3|3|2|0"/>
+    <property name="PerDay9" value="3|3|3|2"/>
+    <property name="Prepared16" value="4|4|4|3|3|2|0"/>
+    <property name="PerDay8" value="3|3|3|1"/>
+    <property name="Prepared15" value="4|4|3|3|3|2"/>
+    <property name="SpellCasterUseKnown" value="true"/>
+    <property name="PerDay7" value="3|3|2|0"/>
+    <property name="Prepared14" value="4|3|3|3|2|1"/>
+    <property name="PerDay6" value="3|3|2"/>
+    <property name="Prepared13" value="3|3|3|3|2|0"/>
+    <property name="PerDay5" value="3|3|1"/>
+    <property name="Prepared12" value="3|3|3|3|2"/>
+    <property name="PerDay4" value="3|2|0"/>
+    <property name="SpellCasterUseSpecial" value="true"/>
+    <property name="Prepared11" value="3|3|3|3|1"/>
+    <property name="PerDay3" value="3|1"/>
+    <property name="Prepared10" value="3|3|3|2|0"/>
+    <property name="PerDay2" value="3|0"/>
+    <property name="CreatureClassType" value="Class"/>
+    <property name="PerDay1" value="2"/>
+    <property name="SavingThrows" value="Ref|Will"/>
+    <property name="MaxClassLevel" value="20"/>
+    <property name="source" value="v.3.9"/>
+    <property name="Known9" value="6|4|4|3"/>
+    <property name="Known8" value="6|4|4|3"/>
+    <property name="Known7" value="6|4|4|2"/>
+    <property name="Known6" value="6|4|3"/>
+    <property name="Known5" value="6|4|3"/>
+    <property name="Known4" value="6|3|2"/>
+    <property name="Known3" value="6|3"/>
+    <property name="Known2" value="5|2"/>
+    <property name="Known1" value="4"/>
+  </__rawProperties>
+  <syncState reference="../__traits/entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+  <idInLib>1601194547</idInLib>
+  <encrypted>false</encrypted>
+  <isEnabled>true</isEnabled>
+  <isEditable>true</isEditable>
+  <isPublic>true</isPublic>
+</com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>

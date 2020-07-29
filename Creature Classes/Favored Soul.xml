@@ -1,0 +1,610 @@
+<com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>
+  <id>ad9f444b-1757-4305-87e4-192ae1bd9c2f</id>
+  <__name>Favored Soul</__name>
+  <__classType>
+    <string>Class</string>
+  </__classType>
+  <__isDirty>false</__isDirty>
+  <__attackRate>0.75</__attackRate>
+  <__attackProgression>
+    <float>0.75</float>
+    <float>1.0</float>
+  </__attackProgression>
+  <__hitDie>d8</__hitDie>
+  <__savingThrows>
+    <string>Fort</string>
+    <string>Ref</string>
+    <string>Will</string>
+  </__savingThrows>
+  <__armor>
+    <string>Light</string>
+    <string>Medium</string>
+    <string>Shields (Except Tower)</string>
+  </__armor>
+  <__weapons/>
+  <__skills>
+    <string>Concentration</string>
+    <string>Craft</string>
+    <string>Diplomacy</string>
+    <string>Heal</string>
+    <string>Jump</string>
+    <string>Knowledge (Arcana)</string>
+    <string>Profession</string>
+    <string>Sense Motive</string>
+    <string>Spellcraft</string>
+  </__skills>
+  <__tools/>
+  <__traits>
+    <entry>
+      <string>3deity&apos;s weapon focusfavored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">3deity&apos;s weapon focusfavored soul</key>
+        <level class="int">3</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Deity&apos;s Weapon Focus</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>5energy resistance (1st type)favored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">5energy resistance (1st type)favored soul</key>
+        <level class="int">5</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Energy Resistance (1st Type)</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>15energy resistance (3rd type)favored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">15energy resistance (3rd type)favored soul</key>
+        <level class="int">15</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Energy Resistance (3rd Type)</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>17wingsfavored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">17wingsfavored soul</key>
+        <level class="int">17</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Wings</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>20damage reductionfavored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">20damage reductionfavored soul</key>
+        <level class="int">20</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Damage Reduction</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1deity&apos;s weapon proficiencyfavored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1deity&apos;s weapon proficiencyfavored soul</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Deity&apos;s Weapon Proficiency</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>12deity&apos;s weapon specializationfavored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">12deity&apos;s weapon specializationfavored soul</key>
+        <level class="int">12</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Deity&apos;s Weapon Specialization</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>10energy resistance (2nd type)favored soul</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">10energy resistance (2nd type)favored soul</key>
+        <level class="int">10</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Energy Resistance (2nd Type)</name>
+        <pools class="list"/>
+        <product class="string">Favored Soul</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Favored Soul</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Favored Soul</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+  </__traits>
+  <__variantOfClass></__variantOfClass>
+  <__variants/>
+  <__special/>
+  <__spellCasting class="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared"/>
+  <__primaryAbility>
+    <string>Cha</string>
+  </__primaryAbility>
+  <__secondaryAbility/>
+  <__rules></__rules>
+  <__type>CREATURE_CLASS</__type>
+  <__source>v.3.9</__source>
+  <__product>D&amp;D 3.5 Core Rulebook</__product>
+  <__properties class="linked-hash-map">
+    <entry>
+      <string>AttackRate</string>
+      <string>.75</string>
+    </entry>
+    <entry>
+      <string>HitDie</string>
+      <string>d8</string>
+    </entry>
+    <entry>
+      <string>CreatureClassType</string>
+      <string>Class</string>
+    </entry>
+    <entry>
+      <string>PrimaryAbility</string>
+      <string>Cha</string>
+    </entry>
+    <entry>
+      <string>Skills</string>
+      <string>Concentration|Craft|Diplomacy|Heal|Jump|Knowledge (Arcana)|Profession|Sense Motive|Spellcraft</string>
+    </entry>
+    <entry>
+      <string>Armor</string>
+      <string>Light|Medium|Shields (Except Tower)</string>
+    </entry>
+    <entry>
+      <string>Features</string>
+      <string>Favored Soul</string>
+    </entry>
+    <entry>
+      <string>SavingThrows</string>
+      <string>Fort|Ref|Will</string>
+    </entry>
+    <entry>
+      <string>SpellCaster</string>
+      <string>com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT</string>
+    </entry>
+    <entry>
+      <string>CreatureClass</string>
+      <string>Favored Soul</string>
+    </entry>
+    <entry>
+      <string>source</string>
+      <string>v.3.9</string>
+    </entry>
+    <entry>
+      <string>product</string>
+      <string>D&amp;D 3.5 Core Rulebook</string>
+    </entry>
+  </__properties>
+  <__rawSource>## Creature Class Template: New Template
+## Class/Race/Template Name
+## NOTE ## Template name must match the name on this line
+CreatureClass=Favored Soul
+
+## Optional ## Define the type or types of the current creature class template.
+CreatureClassType=Class
+
+## Required ## Define the attack rate ratio as a decimal value 1.0 = +1 per level, .5 is +1 every 2 levels
+AttackRate=.75
+
+## Required ## Hit die per level and hit die type in die format
+HitDie=d8
+
+## Optional ## List saving throw(s) which benefit from a good/trained status as a piped list
+SavingThrows=Fort|Ref|Will
+
+## Optional ## List the primary ability/abilities as a piped list
+PrimaryAbility=Cha
+
+## Optional ## List the secondary ability/abilities as a piped list
+SecondaryAbility=
+
+## NOTE ## The following four entries are not currently used to pre-populate characters; However
+## that will change in a near future release. 
+## Optional ## List Skill options as a piped list
+Skills=Concentration|Craft|Diplomacy|Heal|Jump|Knowledge (Arcana)|Profession|Sense Motive|Spellcraft
+
+## Optional ## List Tool options as a piped list
+Tools=
+
+## Optional ## List Armor options as a piped list
+Armor=Light|Medium|Shields (Except Tower)
+
+## Optional ## List Weapon options as a piped list
+Weapons=
+
+## Optional ## List the parent class this template is a variant of
+VariantOfClass=
+
+## Optional ## List all variants of the current creature class as a piped list
+Variants=
+
+## REQUIRED ## Features for class header
+Features=Favored Soul
+
+## FEATURES BY LEVEL ## List features in Feature&lt;level&gt;=piped|list|of|features format
+Features0=
+Features1=Deity&apos;s Weapon Proficiency
+Features2=
+Features3=Deity&apos;s Weapon Focus
+Features4=
+Features5=Energy Resistance (1st Type)
+Features6=
+Features7=
+Features8=
+Features9=
+Features10=Energy Resistance (2nd Type)
+Features11=
+Features12=Deity&apos;s Weapon Specialization
+Features13=
+Features14=
+Features15=Energy Resistance (3rd Type)
+Features16=
+Features17=Wings
+Features18=
+Features19=
+Features20=Damage Reduction
+
+## Optional ## Define the spellcasting template and ability score override to use.
+## NOTE ## this is not required when a Primary Ability line is definied; The FIRST 
+## ability in the Primary Ability line will be used with a default casting template
+## SpellCaster=com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT
+
+## Optional ## Override the system specific Maximum Class Level or define a local Max
+MaxClassLevel=20
+
+## Optional ## GLOBAL SPELLCASTING SETTINGS
+
+## Sets the max spell level for Spell Lists (excluding Special/Domain)
+MaxSpellLevel=9
+
+## Set to true to collapse prepared Special and Spell lists into one casting pool
+SpellUseAllSpellsInLine=true
+
+## Set to true to use Cast and Keep spell memoriztion versus cast and forget
+SpellUseListMemorization=true
+
+## Set to true to keep spells in memory even after having cast them.
+KeepSpellsInMemory=true
+
+## Use to define the SpellCaster Classes capabilities
+## Set to true to use Prepared spell mechanics
+SpellCasterUsePrepared=true
+
+## Set to true to use known/learned spell system
+SpellCasterUseKnown=true
+
+## Set to true to enable domain logic for paths, oaths, circles, bloodlines, etc.
+SpellCasterUseSpecial=true
+
+## Use to define the Spell Editor tab names
+SpellCasterLabels=Spells Prepared|Spells Known|Special
+
+## Show spells per spell level UI
+SpellCasterUseSlots=true
+
+## Set to true to enable trait/pool based casting -- leave false for now!
+SpellCasterUsePools=false
+
+## Define Spell Lists as List Name|List Name|etc
+SpellLists=Spells
+
+## Set the spell cost by spell level
+##           Spell Level  C|1|2|3|4|5|6|7|8|9
+OverrideSpellCostsByLevel=0|1|1|1|1|1|1|1|1|1
+
+## Spells available by spell level as a piped list of spells possible
+Spells0=Create Water|Cure Minor Wounds|Detect Magic|Detect Poison|Guidance|Inflict Minor Wounds|Light|Mending|Purify Food and Drink|Read Magic|Resistance|Virtue
+Spells1=Bane|Bless|Blessed Aim|Bless Water|Cause Fear|Command|Comprehend Languages|Cure Light Wounds|Curse Water|Deathwatch|Detect Chaos|Detect Evil|Detect Good|Detect Law|Detect Undead|Divine Favor|Doom|Endure Elements|Entropic Shield|Hide from Undead|Inflict Light Wounds|Magic Stone|Magic Weapon|Obscuring Mist|Protection from Chaos|Protection from Evil|Protection from Good|Protection from Law|Ray of Hope|Remove Fear|Sanctuary|Shield of Faith|Summon Monster I|Tymora&apos;s Touch|Vigor, Lesser|Updraft
+Spells2=Aid|Align Weapon|Augury|Bear&apos;s Endurance|Bread of Life|Bull&apos;s Strength|Calm Emotions|Consecrate|Cure Moderate Wounds|Darkness|Death Knell|Delay Poison|Desecrate|Eagle&apos;s Splendor|Elation|Enthrall|Find Traps|Gentle Repose|Hold Person|Inflict Moderate Wounds|Make Whole|Owl&apos;s Wisdom|Remove Paralysis|Resist Energy|Restoration, Lesser|Shatter|Shield Other|Silence|Sound Burst|Spiritual Weapon|Status|Summon Monster II|Undetectable Alignment|Zone of Truth
+Spells3=Animate Dead|Bestow Curse|Blindness/Deafness|Contagion|Continual Flame|Create Food and Water|Cure Serious Wounds|Daylight|Deeper Darkness|Dispel Magic|Glyph of Warding|Helping Hand|Inflict Serious Wounds|Invisibility Purge|Locate Object|Magic Circle against Chaos|Magic Circle against Evil|Magic Circle against Good|Magic Circle against Law|Magic Vestment|Meld into Stone|Obscure Object|Prayer|Protection from Energy|Remove Blindness/Deafness|Remove Curse|Remove Disease|Ring of Blades|Searing Light|Speak with Dead|Stone Shape|Summon Monster III|Water Breathing|Water Walk|Wind Wall
+Spells4=Air Walk|Control Water|Cure Critical Wounds|Death Ward|Dimensional Anchor|Discern Lies|Dismissal|Divination|Divine Power|Freedom of Movement|Giant Vermin|Imbue with Spell Ability|Inflict Critical Wounds|Magic Weapon, Greater|Neutralize Poison|Planar Ally, Lesser|Poison|Repel Vermin|Restoration|Sending|Spell Immunity|Summon Monster IV|Tongues
+Spells5=Atonement|Break Enchantment|Command, Greater|Commune|Cure Light Wounds, Mass|Dispel Chaos|Dispel Evil|Dispel Good|Dispel Law|Disrupting Weapon|Flame Strike|Hallow|Inflict Light Wounds, Mass|Insect Plague|Mark of Justice|Plane Shift|Raise Dead|Righteous Might|Scrying|Slay Living|Spell Resistance|Summon Monster V|Symbol of Pain|Symbol of Sleep|True Seeing|Unhallow|Wall of Stone
+Spells6=Animate Objects|Antilife Shell|Banishment|Bear&apos;s Endurance, Mass|Blade Barrier|Bull&apos;s Strength, Mass|Create Undead|Cure Moderate Wounds, Mass|Dispel Magic, Greater|Eagle&apos;s Splendor, Mass|Find the Path|Forbiddance|Geas/Quest|Glyph of Warding, Greater|Harm|Heal|Heroes&apos; Feast|Inflict Moderate Wounds, Mass|Owl&apos;s Wisdom, Mass|Planar Ally|Summon Monster VI|Symbol of Fear|Symbol of Persuasion|Undeath to Death|Wind Walk|Word of Recall
+Spells7=Blasphemy|Control Weather|Cure Serious Wounds, Mass|Destruction|Dictum|Ethereal Jaunt|Holy Word|Inflict Serious Wounds, Mass|Refuge|Regenerate|Repulsion|Restoration, Greater|Resurrection|Scrying, Greater|Summon Monster VII|Symbol of Stunning|Symbol of Weakness|Word of Chaos
+Spells8=Antimagic Field|Cloak of Chaos|Create Greater Undead|Cure Critical Wounds, Mass|Dimensional Lock|Discern Location|Earthquake|Fire Storm|Holy Aura|Planar Ally, Greater|Inflict Critical Wounds, Mass|Shield of Law|Spell Immunity, Greater|Summon Monster VIII|Symbol of Death|Symbol of Insanity|Unholy Aura
+Spells9=Astral Projection|Energy Drain|Etherealness|Gate|Heal, Mass|Implosion|Miracle|Soul Bind|Storm of Vengeance|Summon Monster IX|True Resurrection
+
+## OPTIONAL ## If your class uses a different prepared per day vs casts per day, enable the# Prepared# block and set the correct values as a piped list.## Set of possible prepared spells by spell level
+##           | | | | | | | | | |1
+##          0|1|2|3|4|5|6|7|8|9|0
+ Prepared1=5|3
+ Prepared2=6|4
+ Prepared3=6|5
+ Prepared4=6|6|3
+ Prepared5=6|6|4
+ Prepared6=6|6|5|3
+ Prepared7=6|6|6|4
+ Prepared8=6|6|6|5|3
+ Prepared9=6|6|6|6|4
+Prepared10=6|6|6|5|3
+Prepared11=6|6|6|6|4
+Prepared12=6|6|6|6|5|3
+Prepared13=6|6|6|6|6|4
+Prepared14=6|6|6|6|6|5|3
+Prepared15=6|6|6|6|6|6|4
+Prepared16=6|6|6|6|6|6|5|3
+Prepared17=6|6|6|6|6|6|6|4
+Prepared18=6|6|6|6|6|6|6|5|3
+Prepared19=6|6|6|6|6|6|6|6|4
+Prepared20=6|6|6|6|6|6|6|6|6|3
+##           | | | | | | | | | |1
+##          0|1|2|3|4|5|6|7|8|9|0
+
+## Spells Per Day by caster level as a piped list by spell level
+##        | | | | | | | | | 
+##       0|1|2|3|4|5|6|7|8|9
+PerDay1=5|3
+PerDay2=6|4
+PerDay3=6|5
+PerDay4=6|6|3
+PerDay5=6|6|4
+PerDay6=6|6|5|3
+PerDay7=6|6|6|4
+PerDay8=6|6|6|5|3
+PerDay9=6|6|6|6|4
+PerDay10=6|6|6|5|3
+PerDay11=6|6|6|6|4
+PerDay12=6|6|6|6|5|3
+PerDay13=6|6|6|6|6|4
+PerDay14=6|6|6|6|6|5|3
+PerDay15=6|6|6|6|6|6|4
+PerDay16=6|6|6|6|6|6|5|3
+PerDay17=6|6|6|6|6|6|6|4
+PerDay18=6|6|6|6|6|6|6|5|3
+PerDay19=6|6|6|6|6|6|6|6|4
+PerDay20=6|6|6|6|6|6|6|6|6|3
+##        | | | | | | | | | 
+##       0|1|2|3|4|5|6|7|8|9
+
+## Spells known by caster level as a piped list by spell level
+##       | | | | | | | | | 
+##      0|1|2|3|4|5|6|7|8|9
+ Known1=4|3
+ Known2=5|3
+ Known3=5|4
+ Known4=6|4|3
+ Known5=6|5|3
+ Known6=7|5|4|3
+ Known7=7|6|4|3
+ Known8=8|6|5|4|3
+ Known9=8|6|5|4|3
+Known10=9|6|6|5|4|3
+Known11=9|6|6|5|4|3
+Known12=9|6|6|6|5|4|3
+Known13=9|6|6|6|5|4|3
+Known14=9|6|6|6|6|5|4|3
+Known15=9|6|6|6|6|5|4|3
+Known16=9|6|6|6|6|6|5|4|3
+Known17=9|6|6|6|6|6|5|4|3
+Known18=9|6|6|6|6|6|6|5|4|3
+Known19=9|6|6|6|6|6|6|5|4|3
+Known20=9|6|6|6|6|6|6|6|5|4
+##      0|1|2|3|4|5|6|7|8|9
+##       | | | | | | | | | </__rawSource>
+  <__rawProperties>
+    <property name="OverrideSpellCostsByLevel" value="0|1|1|1|1|1|1|1|1|1"/>
+    <property name="SpellCaster" value="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT"/>
+    <property name="Spells9" value="Astral Projection|Energy Drain|Etherealness|Gate|Heal, Mass|Implosion|Miracle|Soul Bind|Storm of Vengeance|Summon Monster IX|True Resurrection"/>
+    <property name="MaxSpellLevel" value="9"/>
+    <property name="Spells8" value="Antimagic Field|Cloak of Chaos|Create Greater Undead|Cure Critical Wounds, Mass|Dimensional Lock|Discern Location|Earthquake|Fire Storm|Holy Aura|Planar Ally, Greater|Inflict Critical Wounds, Mass|Shield of Law|Spell Immunity, Greater|Summon Monster VIII|Symbol of Death|Symbol of Insanity|Unholy Aura"/>
+    <property name="Prepared9" value="6|6|6|6|4"/>
+    <property name="Spells7" value="Blasphemy|Control Weather|Cure Serious Wounds, Mass|Destruction|Dictum|Ethereal Jaunt|Holy Word|Inflict Serious Wounds, Mass|Refuge|Regenerate|Repulsion|Restoration, Greater|Resurrection|Scrying, Greater|Summon Monster VII|Symbol of Stunning|Symbol of Weakness|Word of Chaos"/>
+    <property name="Known20" value="9|6|6|6|6|6|6|6|5|4"/>
+    <property name="Prepared8" value="6|6|6|5|3"/>
+    <property name="Spells6" value="Animate Objects|Antilife Shell|Banishment|Bear&apos;s Endurance, Mass|Blade Barrier|Bull&apos;s Strength, Mass|Create Undead|Cure Moderate Wounds, Mass|Dispel Magic, Greater|Eagle&apos;s Splendor, Mass|Find the Path|Forbiddance|Geas/Quest|Glyph of Warding, Greater|Harm|Heal|Heroes&apos; Feast|Inflict Moderate Wounds, Mass|Owl&apos;s Wisdom, Mass|Planar Ally|Summon Monster VI|Symbol of Fear|Symbol of Persuasion|Undeath to Death|Wind Walk|Word of Recall"/>
+    <property name="Prepared7" value="6|6|6|4"/>
+    <property name="Spells5" value="Atonement|Break Enchantment|Command, Greater|Commune|Cure Light Wounds, Mass|Dispel Chaos|Dispel Evil|Dispel Good|Dispel Law|Disrupting Weapon|Flame Strike|Hallow|Inflict Light Wounds, Mass|Insect Plague|Mark of Justice|Plane Shift|Raise Dead|Righteous Might|Scrying|Slay Living|Spell Resistance|Summon Monster V|Symbol of Pain|Symbol of Sleep|True Seeing|Unhallow|Wall of Stone"/>
+    <property name="Prepared6" value="6|6|5|3"/>
+    <property name="Spells4" value="Air Walk|Control Water|Cure Critical Wounds|Death Ward|Dimensional Anchor|Discern Lies|Dismissal|Divination|Divine Power|Freedom of Movement|Giant Vermin|Imbue with Spell Ability|Inflict Critical Wounds|Magic Weapon, Greater|Neutralize Poison|Planar Ally, Lesser|Poison|Repel Vermin|Restoration|Sending|Spell Immunity|Summon Monster IV|Tongues"/>
+    <property name="Prepared5" value="6|6|4"/>
+    <property name="Spells3" value="Animate Dead|Bestow Curse|Blindness/Deafness|Contagion|Continual Flame|Create Food and Water|Cure Serious Wounds|Daylight|Deeper Darkness|Dispel Magic|Glyph of Warding|Helping Hand|Inflict Serious Wounds|Invisibility Purge|Locate Object|Magic Circle against Chaos|Magic Circle against Evil|Magic Circle against Good|Magic Circle against Law|Magic Vestment|Meld into Stone|Obscure Object|Prayer|Protection from Energy|Remove Blindness/Deafness|Remove Curse|Remove Disease|Ring of Blades|Searing Light|Speak with Dead|Stone Shape|Summon Monster III|Water Breathing|Water Walk|Wind Wall"/>
+    <property name="Prepared4" value="6|6|3"/>
+    <property name="Spells2" value="Aid|Align Weapon|Augury|Bear&apos;s Endurance|Bread of Life|Bull&apos;s Strength|Calm Emotions|Consecrate|Cure Moderate Wounds|Darkness|Death Knell|Delay Poison|Desecrate|Eagle&apos;s Splendor|Elation|Enthrall|Find Traps|Gentle Repose|Hold Person|Inflict Moderate Wounds|Make Whole|Owl&apos;s Wisdom|Remove Paralysis|Resist Energy|Restoration, Lesser|Shatter|Shield Other|Silence|Sound Burst|Spiritual Weapon|Status|Summon Monster II|Undetectable Alignment|Zone of Truth"/>
+    <property name="KeepSpellsInMemory" value="true"/>
+    <property name="Prepared3" value="6|5"/>
+    <property name="SpellCasterUsePrepared" value="true"/>
+    <property name="Spells1" value="Bane|Bless|Blessed Aim|Bless Water|Cause Fear|Command|Comprehend Languages|Cure Light Wounds|Curse Water|Deathwatch|Detect Chaos|Detect Evil|Detect Good|Detect Law|Detect Undead|Divine Favor|Doom|Endure Elements|Entropic Shield|Hide from Undead|Inflict Light Wounds|Magic Stone|Magic Weapon|Obscuring Mist|Protection from Chaos|Protection from Evil|Protection from Good|Protection from Law|Ray of Hope|Remove Fear|Sanctuary|Shield of Faith|Summon Monster I|Tymora&apos;s Touch|Vigor, Lesser|Updraft"/>
+    <property name="product" value="D&amp;D 3.5 Core Rulebook"/>
+    <property name="Prepared2" value="6|4"/>
+    <property name="Spells0" value="Create Water|Cure Minor Wounds|Detect Magic|Detect Poison|Guidance|Inflict Minor Wounds|Light|Mending|Purify Food and Drink|Read Magic|Resistance|Virtue"/>
+    <property name="Prepared1" value="5|3"/>
+    <property name="SpellUseListMemorization" value="true"/>
+    <property name="Known19" value="9|6|6|6|6|6|6|5|4|3"/>
+    <property name="Known18" value="9|6|6|6|6|6|6|5|4|3"/>
+    <property name="Known17" value="9|6|6|6|6|6|5|4|3"/>
+    <property name="Known16" value="9|6|6|6|6|6|5|4|3"/>
+    <property name="Known15" value="9|6|6|6|6|5|4|3"/>
+    <property name="PrimaryAbility" value="Cha"/>
+    <property name="Known14" value="9|6|6|6|6|5|4|3"/>
+    <property name="Known13" value="9|6|6|6|5|4|3"/>
+    <property name="Known12" value="9|6|6|6|5|4|3"/>
+    <property name="Known11" value="9|6|6|5|4|3"/>
+    <property name="Known10" value="9|6|6|5|4|3"/>
+    <property name="SpellUseAllSpellsInLine" value="true"/>
+    <property name="CreatureClass" value="Favored Soul"/>
+    <property name="Features20" value="Damage Reduction"/>
+    <property name="SpellLists" value="Spells"/>
+    <property name="Features" value="Favored Soul"/>
+    <property name="Features17" value="Wings"/>
+    <property name="Features15" value="Energy Resistance (3rd Type)"/>
+    <property name="AttackRate" value=".75"/>
+    <property name="Features12" value="Deity&apos;s Weapon Specialization"/>
+    <property name="Features10" value="Energy Resistance (2nd Type)"/>
+    <property name="Features5" value="Energy Resistance (1st Type)"/>
+    <property name="Features3" value="Deity&apos;s Weapon Focus"/>
+    <property name="Features1" value="Deity&apos;s Weapon Proficiency"/>
+    <property name="PerDay20" value="6|6|6|6|6|6|6|6|6|3"/>
+    <property name="SpellCasterUsePools" value="false"/>
+    <property name="SpellCasterLabels" value="Spells Prepared|Spells Known|Special"/>
+    <property name="Prepared20" value="6|6|6|6|6|6|6|6|6|3"/>
+    <property name="SpellCasterUseSlots" value="true"/>
+    <property name="Armor" value="Light|Medium|Shields (Except Tower)"/>
+    <property name="PerDay19" value="6|6|6|6|6|6|6|6|4"/>
+    <property name="HitDie" value="d8"/>
+    <property name="PerDay18" value="6|6|6|6|6|6|6|5|3"/>
+    <property name="PerDay17" value="6|6|6|6|6|6|6|4"/>
+    <property name="PerDay16" value="6|6|6|6|6|6|5|3"/>
+    <property name="PerDay15" value="6|6|6|6|6|6|4"/>
+    <property name="PerDay14" value="6|6|6|6|6|5|3"/>
+    <property name="PerDay13" value="6|6|6|6|6|4"/>
+    <property name="PerDay12" value="6|6|6|6|5|3"/>
+    <property name="Prepared19" value="6|6|6|6|6|6|6|6|4"/>
+    <property name="Prepared18" value="6|6|6|6|6|6|6|5|3"/>
+    <property name="PerDay11" value="6|6|6|6|4"/>
+    <property name="Prepared17" value="6|6|6|6|6|6|6|4"/>
+    <property name="PerDay10" value="6|6|6|5|3"/>
+    <property name="PerDay9" value="6|6|6|6|4"/>
+    <property name="Prepared16" value="6|6|6|6|6|6|5|3"/>
+    <property name="PerDay8" value="6|6|6|5|3"/>
+    <property name="Prepared15" value="6|6|6|6|6|6|4"/>
+    <property name="SpellCasterUseKnown" value="true"/>
+    <property name="PerDay7" value="6|6|6|4"/>
+    <property name="Prepared14" value="6|6|6|6|6|5|3"/>
+    <property name="PerDay6" value="6|6|5|3"/>
+    <property name="Prepared13" value="6|6|6|6|6|4"/>
+    <property name="PerDay5" value="6|6|4"/>
+    <property name="Prepared12" value="6|6|6|6|5|3"/>
+    <property name="PerDay4" value="6|6|3"/>
+    <property name="SpellCasterUseSpecial" value="true"/>
+    <property name="Prepared11" value="6|6|6|6|4"/>
+    <property name="PerDay3" value="6|5"/>
+    <property name="Prepared10" value="6|6|6|5|3"/>
+    <property name="PerDay2" value="6|4"/>
+    <property name="CreatureClassType" value="Class"/>
+    <property name="PerDay1" value="5|3"/>
+    <property name="SavingThrows" value="Fort|Ref|Will"/>
+    <property name="MaxClassLevel" value="20"/>
+    <property name="source" value="v.3.9"/>
+    <property name="Known9" value="8|6|5|4|3"/>
+    <property name="Known8" value="8|6|5|4|3"/>
+    <property name="Known7" value="7|6|4|3"/>
+    <property name="Known6" value="7|5|4|3"/>
+    <property name="Known5" value="6|5|3"/>
+    <property name="Known4" value="6|4|3"/>
+    <property name="Known3" value="5|4"/>
+    <property name="Skills" value="Concentration|Craft|Diplomacy|Heal|Jump|Knowledge (Arcana)|Profession|Sense Motive|Spellcraft"/>
+    <property name="Known2" value="5|3"/>
+    <property name="Known1" value="4|3"/>
+  </__rawProperties>
+  <syncState reference="../__traits/entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+  <idInLib>1919860426</idInLib>
+  <encrypted>false</encrypted>
+  <isEnabled>true</isEnabled>
+  <isEditable>true</isEditable>
+  <isPublic>true</isPublic>
+</com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>

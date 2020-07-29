@@ -1,0 +1,710 @@
+<com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>
+  <id>3571e61a-7261-4fa8-8c17-65e9843c7947</id>
+  <__name>Ranger</__name>
+  <__classType>
+    <string>Class</string>
+  </__classType>
+  <__isDirty>false</__isDirty>
+  <__attackRate>1.0</__attackRate>
+  <__attackProgression>
+    <float>1.0</float>
+    <float>1.0</float>
+  </__attackProgression>
+  <__hitDie>d8</__hitDie>
+  <__savingThrows>
+    <string>Fort</string>
+    <string>Ref</string>
+  </__savingThrows>
+  <__armor/>
+  <__weapons/>
+  <__skills/>
+  <__tools/>
+  <__traits>
+    <entry>
+      <string>10favored enemy (3rd)ranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">10favored enemy (3rd)ranger</key>
+        <level class="int">10</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Favored Enemy (3rd)</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>15favored enemy (4th)ranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">15favored enemy (4th)ranger</key>
+        <level class="int">15</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Favored Enemy (4th)</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1favored enemy (1st)ranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1favored enemy (1st)ranger</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Favored Enemy (1st)</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>5favored enemy (2nd)ranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">5favored enemy (2nd)ranger</key>
+        <level class="int">5</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Favored Enemy (2nd)</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>0endurancegeneric</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">true</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">978805681</idInLib>
+        <key class="string">0endurancegeneric</key>
+        <level class="int">0</level>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Endurance</name>
+        <pools class="list"/>
+        <product class="string">D&amp;D 3.5 Core Rulebook</product>
+        <public class="boolean">true</public>
+        <source class="string">Generic</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Generic</tab>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>8swift trackerranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">8swift trackerranger</key>
+        <level class="int">8</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Swift Tracker</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>0evasionevasion</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">true</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">235671425</idInLib>
+        <key class="string">0evasionevasion</key>
+        <level class="int">0</level>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Evasion</name>
+        <pools class="list"/>
+        <product class="string">Evasion</product>
+        <public class="boolean">true</public>
+        <source class="string">Evasion</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Evasion</tab>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>13camouflageranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">13camouflageranger</key>
+        <level class="int">13</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Camouflage</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>4animal companionranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">4animal companionranger</key>
+        <level class="int">4</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Animal Companion</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>0trackgeneric</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">true</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">921088503</idInLib>
+        <key class="string">0trackgeneric</key>
+        <level class="int">0</level>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Track</name>
+        <pools class="list"/>
+        <product class="string">D&amp;D 3.5 Core Rulebook</product>
+        <public class="boolean">true</public>
+        <source class="string">Generic</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Generic</tab>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1wild empathyranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1wild empathyranger</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Wild Empathy</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>7woodland strideranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">7woodland strideranger</key>
+        <level class="int">7</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Woodland Stride</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>6improved combat styleranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">6improved combat styleranger</key>
+        <level class="int">6</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Improved Combat Style</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>11combat syle masteryranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">11combat syle masteryranger</key>
+        <level class="int">11</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Combat Syle Mastery</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>20favored enemy (5th)ranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">20favored enemy (5th)ranger</key>
+        <level class="int">20</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Favored Enemy (5th)</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>17hide in plain sightranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">17hide in plain sightranger</key>
+        <level class="int">17</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Hide in Plain Sight</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>2combat styleranger</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">2combat styleranger</key>
+        <level class="int">2</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Combat Style</name>
+        <pools class="list"/>
+        <product class="string">Ranger</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Ranger</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Ranger</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+  </__traits>
+  <__variantOfClass></__variantOfClass>
+  <__variants/>
+  <__special/>
+  <__spellCasting class="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared"/>
+  <__primaryAbility>
+    <string>Wis</string>
+  </__primaryAbility>
+  <__secondaryAbility/>
+  <__rules></__rules>
+  <__type>CREATURE_CLASS</__type>
+  <__source>Ranger</__source>
+  <__product>D&amp;D 3.5 Core Rulebook</__product>
+  <__properties class="linked-hash-map">
+    <entry>
+      <string>AttackRate</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>HitDie</string>
+      <string>d8</string>
+    </entry>
+    <entry>
+      <string>CreatureClassType</string>
+      <string>Class</string>
+    </entry>
+    <entry>
+      <string>PrimaryAbility</string>
+      <string>Wis</string>
+    </entry>
+    <entry>
+      <string>Features</string>
+      <string>Ranger</string>
+    </entry>
+    <entry>
+      <string>SavingThrows</string>
+      <string>Fort|Ref</string>
+    </entry>
+    <entry>
+      <string>SpellCaster</string>
+      <string>com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT</string>
+    </entry>
+    <entry>
+      <string>CreatureClass</string>
+      <string>Ranger</string>
+    </entry>
+    <entry>
+      <string>source</string>
+      <string>Ranger</string>
+    </entry>
+    <entry>
+      <string>product</string>
+      <string>D&amp;D 3.5 Core Rulebook</string>
+    </entry>
+  </__properties>
+  <__rawSource>## Creature Class Template: New Template
+## Class/Race/Template Name
+## NOTE ## Template name must match the name on this line
+CreatureClass=Ranger
+
+## Optional ## Define the type or types of the current creature class template.
+CreatureClassType=Class
+
+## Required ## Define the attack rate ratio as a decimal value 1.0 = +1 per level, .5 is +1 every 2 levels
+AttackRate=1
+
+## Required ## Hit die per level and hit die type in die format
+HitDie=d8
+
+## Optional ## List saving throw(s) which benefit from a good/trained status as a piped list
+SavingThrows=Fort|Ref
+
+## Optional ## List the primary ability/abilities as a piped list
+PrimaryAbility=Wis
+
+## Optional ## List the secondary ability/abilities as a piped list
+SecondaryAbility=
+
+## NOTE ## The following four entries are not currently used to pre-populate characters; However
+## that will change in a near future release. 
+## Optional ## List Skill options as a piped list
+Skills=
+
+## Optional ## List Tool options as a piped list
+Tools=
+
+## Optional ## List Armor options as a piped list
+Armor=
+
+## Optional ## List Weapon options as a piped list
+Weapons=
+
+## Optional ## List the parent class this template is a variant of
+VariantOfClass=
+
+## Optional ## List all variants of the current creature class as a piped list
+Variants=
+
+## REQUIRED ## Features for class header
+Features=Ranger
+
+## FEATURES BY LEVEL ## List features in Feature&lt;level&gt;=piped|list|of|features format
+Features1=Favored Enemy (1st)|Track|Wild Empathy
+Features2=Combat Style
+Features3=Endurance
+Features4=Animal Companion
+Features5=Favored Enemy (2nd)
+Features6=Improved Combat Style
+Features7=Woodland Stride
+Features8=Swift Tracker
+Features9=Evasion
+Features10=Favored Enemy (3rd)
+Features11=Combat Syle Mastery
+Features13=Camouflage
+Features15=Favored Enemy (4th)
+Features17=Hide in Plain Sight
+Features20=Favored Enemy (5th)
+
+## Optional ## Define the spellcasting template and ability score override to use.
+## NOTE ## this is not required when a Primary Ability line is definied; The FIRST 
+## ability in the Primary Ability line will be used with a default casting template
+## SpellCaster=com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT
+
+## Optional ## Override the system specific Maximum Class Level or define a local Max
+MaxClassLevel=20
+
+## Optional ## GLOBAL SPELLCASTING SETTINGS
+
+## Sets the max spell level for Spell Lists (excluding Special/Domain)
+MaxSpellLevel=4
+
+## Set to true to collapse prepared Special and Spell lists into one casting pool
+SpellUseAllSpellsInLine=false
+
+## Set to true to use Cast and Keep spell memoriztion versus cast and forget
+SpellUseListMemorization=false
+
+## Set to true to keep spells in memory even after having cast them.
+KeepSpellsInMemory=true
+
+## Use to define the SpellCaster Classes capabilities
+## Set to true to use Prepared spell mechanics
+SpellCasterUsePrepared=true
+
+## Set to true to use known/learned spell system
+SpellCasterUseKnown=false
+
+## USE all spells as prepred spells.
+SpellCasterUseAllSpellsPrepared=true
+
+## Set to true to enable domain logic for paths, oaths, circles, bloodlines, etc.
+SpellCasterUseSpecial=false
+
+## Use to define the Spell Editor tab names
+SpellCasterLabels=Spells Prepared
+
+## Show spells per spell level UI
+SpellCasterUseSlots=true
+
+## Set to true to enable trait/pool based casting -- leave false for now!
+SpellCasterUsePools=false
+
+## Define Spell Lists as List Name|List Name|etc
+SpellLists=Spells
+
+## Set the spell cost by spell level
+##           Spell Level  C|1|2|3|4
+OverrideSpellCostsByLevel=0|1|1|1|1
+
+## Spells available by spell level as a piped list of spells possible
+Spells1=Alarm|Animal Messenger|Calm Animals|Charm Animal|Delay Poison|Detect Animals or Plants|Detect Poison|Detect Snares and Pits|Endure Elements|Entangle|Hide from Animals|Jump|Longstrider|Magic Fang|Pass without Trace|Read Magic|Resist Energy|Speak with Animals|Summon Nature&apos;s Ally I
+Spells2=Barkskin|Bear&apos;s Endurance|Cat&apos;s Grace|Cure Light Wounds|Hold Animal|Owl&apos;s Wisdom|Protection from Energy|Snare|Speak with Plants|Spike Growth|Summon Nature&apos;s Ally II|Wind Wall
+Spells3=Command Plants|Cure Moderate Wounds|Darkvision|Diminish Plants|Magic Fang, Greater|Neutralize Poison|Plant Growth|Reduce Animal|Remove Disease|Repel Vermin|Summon Nature&apos;s Ally III|Tree Shape|Water Walk
+Spells4=Animal Growth|Commune with Nature|Cure Serious Wounds|Freedom of Movement|Nondetection|Summon Nature&apos;s Ally IV|Tree Stride
+
+## OPTIONAL ## If your class uses a different prepared per day vs casts per day, enable the# Prepared# block and set the correct values as a piped list.## Set of possible prepared spells by spell level
+##           | | | | | | | | | |1
+##          0|1|2|3|4|5|6|7|8|9|0
+
+##           | | | | | | | | | |1
+##          0|1|2|3|4|5|6|7|8|9|0
+
+## Spells Per Day by caster level as a piped list by spell level
+##        | | | | | | | | | |1
+##       0|1|2|3|4|5|6|7|8|9|0
+ PerDay1=-
+ PerDay2=-
+ PerDay3=-
+ PerDay4=-|0
+ PerDay5=-|0
+ PerDay6=-|1
+ PerDay7=-|1
+ PerDay8=-|1|0
+ PerDay9=-|1|0
+PerDay10=-|1|1
+PerDay11=-|1|1|0
+PerDay12=-|1|1|1
+PerDay13=-|1|1|1
+PerDay14=-|2|1|1|0
+PerDay15=-|2|1|1|1
+PerDay16=-|2|2|1|1
+PerDay17=-|2|2|2|1
+PerDay18=-|3|2|2|1
+PerDay19=-|3|3|3|2
+PerDay20=-|3|3|3|3
+##        | | | | | | | | | |1
+##       0|1|2|3|4|5|6|7|8|9|0
+
+
+
+## Spells known by caster level as a piped list by spell level
+##       | | | | | | | | | |1
+##      0|1|2|3|4|5|6|7|8|9|0
+
+##      0|1|2|3|4|5|6|7|8|9|0
+##       | | | | | | | | | |1
+</__rawSource>
+  <__rawProperties>
+    <property name="PerDay15" value="-|2|1|1|1"/>
+    <property name="PerDay14" value="-|2|1|1|0"/>
+    <property name="SpellCasterLabels" value="Spells Prepared"/>
+    <property name="PerDay13" value="-|1|1|1"/>
+    <property name="PerDay12" value="-|1|1|1"/>
+    <property name="PerDay11" value="-|1|1|0"/>
+    <property name="PerDay10" value="-|1|1"/>
+    <property name="Spells4" value="Animal Growth|Commune with Nature|Cure Serious Wounds|Freedom of Movement|Nondetection|Summon Nature&apos;s Ally IV|Tree Stride"/>
+    <property name="Spells3" value="Command Plants|Cure Moderate Wounds|Darkvision|Diminish Plants|Magic Fang, Greater|Neutralize Poison|Plant Growth|Reduce Animal|Remove Disease|Repel Vermin|Summon Nature&apos;s Ally III|Tree Shape|Water Walk"/>
+    <property name="Spells2" value="Barkskin|Bear&apos;s Endurance|Cat&apos;s Grace|Cure Light Wounds|Hold Animal|Owl&apos;s Wisdom|Protection from Energy|Snare|Speak with Plants|Spike Growth|Summon Nature&apos;s Ally II|Wind Wall"/>
+    <property name="Spells1" value="Alarm|Animal Messenger|Calm Animals|Charm Animal|Delay Poison|Detect Animals or Plants|Detect Poison|Detect Snares and Pits|Endure Elements|Entangle|Hide from Animals|Jump|Longstrider|Magic Fang|Pass without Trace|Read Magic|Resist Energy|Speak with Animals|Summon Nature&apos;s Ally I"/>
+    <property name="SpellCasterUseSlots" value="true"/>
+    <property name="Features17" value="Hide in Plain Sight"/>
+    <property name="Features15" value="Favored Enemy (4th)"/>
+    <property name="Features13" value="Camouflage"/>
+    <property name="SpellCasterUsePrepared" value="true"/>
+    <property name="Features11" value="Combat Syle Mastery"/>
+    <property name="Features10" value="Favored Enemy (3rd)"/>
+    <property name="SpellCasterUseKnown" value="false"/>
+    <property name="MaxSpellLevel" value="4"/>
+    <property name="source" value="Ranger"/>
+    <property name="SpellUseListMemorization" value="false"/>
+    <property name="AttackRate" value="1"/>
+    <property name="KeepSpellsInMemory" value="true"/>
+    <property name="CreatureClass" value="Ranger"/>
+    <property name="PrimaryAbility" value="Wis"/>
+    <property name="SpellCasterUseSpecial" value="false"/>
+    <property name="Features" value="Ranger"/>
+    <property name="MaxClassLevel" value="20"/>
+    <property name="product" value="D&amp;D 3.5 Core Rulebook"/>
+    <property name="PerDay9" value="-|1|0"/>
+    <property name="PerDay20" value="-|3|3|3|3"/>
+    <property name="PerDay8" value="-|1|0"/>
+    <property name="PerDay7" value="-|1"/>
+    <property name="PerDay6" value="-|1"/>
+    <property name="PerDay5" value="-|0"/>
+    <property name="PerDay4" value="-|0"/>
+    <property name="PerDay3" value="-"/>
+    <property name="Features9" value="Evasion"/>
+    <property name="PerDay2" value="-"/>
+    <property name="SpellLists" value="Spells"/>
+    <property name="Features8" value="Swift Tracker"/>
+    <property name="PerDay1" value="-"/>
+    <property name="Features7" value="Woodland Stride"/>
+    <property name="OverrideSpellCostsByLevel" value="0|1|1|1|1"/>
+    <property name="Features6" value="Improved Combat Style"/>
+    <property name="Features5" value="Favored Enemy (2nd)"/>
+    <property name="SpellCasterUseAllSpellsPrepared" value="true"/>
+    <property name="Features4" value="Animal Companion"/>
+    <property name="HitDie" value="d8"/>
+    <property name="Features3" value="Endurance"/>
+    <property name="SpellCasterUsePools" value="false"/>
+    <property name="Features2" value="Combat Style"/>
+    <property name="Features1" value="Favored Enemy (1st)|Track|Wild Empathy"/>
+    <property name="SpellCaster" value="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT"/>
+    <property name="Features20" value="Favored Enemy (5th)"/>
+    <property name="PerDay19" value="-|3|3|3|2"/>
+    <property name="SavingThrows" value="Fort|Ref"/>
+    <property name="CreatureClassType" value="Class"/>
+    <property name="PerDay18" value="-|3|2|2|1"/>
+    <property name="SpellUseAllSpellsInLine" value="false"/>
+    <property name="PerDay17" value="-|2|2|2|1"/>
+    <property name="PerDay16" value="-|2|2|1|1"/>
+  </__rawProperties>
+  <syncState reference="../__traits/entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+  <idInLib>18834389</idInLib>
+  <encrypted>false</encrypted>
+  <isEnabled>true</isEnabled>
+  <isEditable>true</isEditable>
+  <isPublic>true</isPublic>
+</com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>
