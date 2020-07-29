@@ -1,0 +1,20 @@
+<com.d20pro.temp_extraction.plugin.feature.model.pool.Pool>
+  <castAsClass class="string">None</castAsClass>
+  <castAsLevel class="int">0</castAsLevel>
+  <consumable class="boolean">false</consumable>
+  <customCost class="list"/>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <features class="list"/>
+  <fetchFeaturesFromLibrary class="boolean">true</fetchFeaturesFromLibrary>
+  <idInLib class="int">0</idInLib>
+  <isInitialized class="boolean">false</isInitialized>
+  <name class="string">At Will</name>
+  <public class="boolean">true</public>
+  <remainingCharges class="int">10</remainingCharges>
+  <templateName class="string">At Will</templateName>
+  <totalCharges class="int">10</totalCharges>
+  <usageType class="com.d20pro.temp_extraction.plugin.feature.model.enums.PoolUsageTypes">AT_WILL</usageType>
+  <useHigherLevel class="boolean">false</useHigherLevel>
+</com.d20pro.temp_extraction.plugin.feature.model.pool.Pool>

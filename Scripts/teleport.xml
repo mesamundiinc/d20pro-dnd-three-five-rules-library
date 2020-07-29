@@ -1,0 +1,29 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;h3&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;&lt;b&gt;&lt;i&gt;teleport()&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Teleport moves the targets of the first template and moves them to the location of the second template.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Teleport does not translate a creature through the spaces between the two targets. Additionally, teleport can be used to create &quot;portals&quot; between maps as templates can exist on different maps in the open map list.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Please note that if you close a map with an existing &quot;portal&quot; using this feature, you will lose the link under the current build. The ability to save maps to the library with this feature attached will be available in a future release as a dedicate tool.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">teleport</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function teleport(){ 
+ if (null !== targetsInPlay) {
+     targetsInPlay.forEach(function(c) {
+         // print(feature.getTemplates().size() );
+         //hash.firstentry().getValue();
+         var id = feature.getTemplates().get(0).getId();
+         print( map.getTemplates().get(0).getOrigin() );
+         var loc = feature.getTemplates().get(0).getOrigin();
+         print(loc.getX() + &quot;, &quot; + loc.getY());
+         var pnt = c.getPoint(parseInt(Math.round(loc.getX())), parseInt(Math.round(loc.getY())));
+         c.setLocation(pnt);
+         c.notifyMobMoved();
+     });
+ }
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

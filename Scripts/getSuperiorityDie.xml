@@ -1,0 +1,34 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Lucida Grande&quot;&gt;For use when determining which die type is used for a Superiority Die (based on level).&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getSuperiorityDie</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function getSuperiorityDie()
+{ 
+    var xCL = getCasterClassLevel();
+    var xSD = 8;
+    
+    switch(true) {
+        case xCL &gt;= 18:
+            xSD = 12;
+        break;
+        case (xCL &gt;= 10 &amp;&amp; xCL &lt; 18):
+            xSD = 10;
+        break;      
+        case xCL &lt;= 9:
+            xSD = 8;
+        break;        
+    }
+    print(&apos;xSD =&apos; + xSD);
+    return xSD;
+}
+
+</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Getters</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

@@ -1,0 +1,43 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;h3&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;&lt;i&gt;placeLight( radius )&lt;/i&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Place Light provides a scripted mechanism to place a light someone on the map as a result of a feature effect (spell or feature/trait).&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Input for this method is a radius (double) where 1.0 = 1 grid unit (typically 5&apos;).&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">placeLight</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function placeLight(r){ 
+ if (null !== targetsInPlay)
+ {
+    feature.getTemplates().forEach( function(t) {
+        var loc = t.getOrigin();
+        print(&quot;t.origin &quot; + loc.getX() + &quot;, &quot; + loc.getY());
+        var lt = light.createLight();
+        lt.setName(caster.getName());
+        var w = t.getWidth()/2;
+        var offset = 0;
+        var x = loc.getX() + w + offset;
+        var y = loc.getY() + w + offset;
+        var o = casterInPlay.getPoint2D(x, y);
+        print(&quot;w: &quot; + w);
+        print(&quot;o: &quot; + o.getX() + &quot;, &quot; + o.getY());
+        lt.setPosition( o );
+        if (undefined === r || r === null)
+            lt.setRadius(2);
+        else
+            lt.setRadius(r);
+            
+        casterInPlay.getLights().add(lt);
+        map.getLights().add(lt);
+        casterInPlay.notifyMobMoved();
+    
+    });
+ }
+ 
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

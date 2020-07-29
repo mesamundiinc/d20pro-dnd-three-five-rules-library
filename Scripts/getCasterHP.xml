@@ -1,0 +1,20 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;Returns caster&apos;s current HP to the feature&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getCasterHP</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">/**&#x0D;
+ * returns the current HP&apos;s of the caster&#x0D;
+ */&#x0D;
+&#x0D;
+function getCasterHP() {&#x0D;
+    return caster.getHP();&#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">true</showWhenEncrypted>
+  <source class="string">Getters</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

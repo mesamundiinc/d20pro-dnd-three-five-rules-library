@@ -1,0 +1,21 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;Enlarge the target by number of sizes&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">enlargeTarget</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function enlargeTarget(num)&#x0D;
+{&#x0D;
+	target.setSize( target.getSize() + num );&#x0D;
+	target.setFace( target.getWidth() + num, target.getHeight() + num );&#x0D;
+	target.setReach( target.getReach() + num );&#x0D;
+	&#x0D;
+	return 0;&#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">true</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

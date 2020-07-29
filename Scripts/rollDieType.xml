@@ -1,0 +1,39 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: &apos;Courier New&apos;; background-color: rgb(255, 255, 255);&quot;&gt;Takes a string die equation and a named type as input.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Usage example:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;rollDieType(&quot;&lt;font color=&quot;#6680e6&quot;&gt;&lt;b&gt;d8&lt;/b&gt;&lt;/font&gt;&quot;, &quot;&lt;font color=&quot;#669966&quot;&gt;&lt;b&gt;Superiority Die&lt;/b&gt;&lt;/font&gt;&quot;);&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Output to gamelog:&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#e6994d&quot;&gt;CasterName&lt;/font&gt; rolled &lt;font color=&quot;#6680e6&quot;&gt;&lt;b&gt;d8&lt;/b&gt;&lt;/font&gt; as a &lt;font color=&quot;#80b380&quot;&gt;&lt;b&gt;Superiority Die&lt;/b&gt;&lt;/font&gt; for a result &lt;font color=&quot;#ffb366&quot;&gt;7&lt;/font&gt;.&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#e6994d&quot; style=&quot;font-family: &apos;Courier New&apos;; background-color: rgb(255, 255, 255);&quot;&gt;CasterName&lt;/font&gt;&lt;span style=&quot;font-family: &apos;Courier New&apos;; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;is determined by caster.getName()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(255, 179, 102); font-family: &apos;Courier New&apos;; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;7 &lt;/span&gt;&lt;span style=&quot;font-family: &apos;Courier New&apos;; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#003333&quot;&gt;is determined by the Dice roller class rolling a d8.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">rollDieType</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function rollDieType(roll, type)
+{ 
+    var rollResult = caster.rollDice(roll);
+    var result = rollResult.total();
+    
+    addToRollsLog(&quot;&quot;);
+    addToRollsLog(caster.getName() + &quot; rolled &quot; + roll + &quot; as a &quot; + type + &quot; for a total of &quot; + result);
+    
+    if (rollResult.hasIndividualRolls())
+    {
+        var i = 0;
+        addToRollsLog(caster.getName() + &quot; rolled &quot; + roll + &quot; as a &quot; + type + &quot; for a total of &quot; + result);
+        var rolls = &quot;&quot;;
+        rollResult.getIndividualRolls().forEach( function(r) {
+            if (i !== 0)
+                rolls +=  &quot;, &quot; + r;
+            else
+                rolls += r;
+                
+            i++;
+        });
+        addToRollsLog(&quot;individual rolls: &quot; + rolls);
+    }
+    
+    return result;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

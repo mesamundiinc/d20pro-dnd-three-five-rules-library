@@ -1,0 +1,1196 @@
+<com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>
+  <id>4ba452ff-8847-48fa-aec1-e27f50e34990</id>
+  <__name>Cleric</__name>
+  <__classType>
+    <string>Class</string>
+  </__classType>
+  <__isDirty>true</__isDirty>
+  <__attackRate>0.75</__attackRate>
+  <__attackProgression>
+    <float>0.75</float>
+    <float>1.0</float>
+  </__attackProgression>
+  <__hitDie>d8</__hitDie>
+  <__savingThrows>
+    <string>Fort</string>
+    <string>Will</string>
+  </__savingThrows>
+  <__armor>
+    <string>Light</string>
+    <string>Medium</string>
+    <string>Heavy</string>
+    <string>Shields (Except Tower)</string>
+  </__armor>
+  <__weapons>
+    <string>Simple</string>
+  </__weapons>
+  <__skills>
+    <string>Concentration</string>
+    <string>Craft</string>
+    <string>Diplomacy</string>
+    <string>Heal</string>
+    <string>Knowledge (Arcana)</string>
+    <string>Knowledge (History)</string>
+    <string>Knowledge (Religion)</string>
+    <string>Knoweldge (The Planes)</string>
+    <string>Profession</string>
+    <string>Spellcraft</string>
+  </__skills>
+  <__tools/>
+  <__traits>
+    <entry>
+      <string>1rebuke undead (evil)cleric</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1rebuke undead (evil)cleric</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Rebuke Undead (Evil)</name>
+        <pools class="list"/>
+        <product class="string">Cleric</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Cleric</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+        <tab class="string">Cleric</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+    <entry>
+      <string>1turn undead (good)cleric</string>
+      <com.mindgene.d20.common.game.trait.GenericTrait>
+        <availableUses class="byte">0</availableUses>
+        <editable class="boolean">true</editable>
+        <enabled class="boolean">false</enabled>
+        <encrypted class="boolean">false</encrypted>
+        <equipped class="boolean">false</equipped>
+        <idInLib class="int">0</idInLib>
+        <key class="string">1turn undead (good)cleric</key>
+        <level class="int">1</level>
+        <longDescription class="string"></longDescription>
+        <maxUses class="byte">0</maxUses>
+        <name class="string">Turn Undead (Good)</name>
+        <pools class="list"/>
+        <product class="string">Cleric</product>
+        <public class="boolean">true</public>
+        <shortDescription class="string"></shortDescription>
+        <source class="string">Cleric</source>
+        <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState" reference="../../../entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+        <tab class="string">Cleric</tab>
+        <useType class="string">none</useType>
+      </com.mindgene.d20.common.game.trait.GenericTrait>
+    </entry>
+  </__traits>
+  <__variantOfClass></__variantOfClass>
+  <__variants/>
+  <__special/>
+  <__spellCasting class="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared"/>
+  <__primaryAbility>
+    <string>Wis</string>
+  </__primaryAbility>
+  <__secondaryAbility/>
+  <__rules></__rules>
+  <__type>CREATURE_CLASS</__type>
+  <__product>D&amp;D 3.5 Core Rulebook</__product>
+  <__properties class="linked-hash-map">
+    <entry>
+      <string>AttackRate</string>
+      <string>.75</string>
+    </entry>
+    <entry>
+      <string>HitDie</string>
+      <string>d8</string>
+    </entry>
+    <entry>
+      <string>CreatureClassType</string>
+      <string>Class</string>
+    </entry>
+    <entry>
+      <string>PrimaryAbility</string>
+      <string>Wis</string>
+    </entry>
+    <entry>
+      <string>Skills</string>
+      <string>Concentration|Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knoweldge (The Planes)|Profession|Spellcraft</string>
+    </entry>
+    <entry>
+      <string>Weapons</string>
+      <string>Simple</string>
+    </entry>
+    <entry>
+      <string>Armor</string>
+      <string>Light|Medium|Heavy|Shields (Except Tower)</string>
+    </entry>
+    <entry>
+      <string>Features</string>
+      <string>Cleric</string>
+    </entry>
+    <entry>
+      <string>SavingThrows</string>
+      <string>Fort|Will</string>
+    </entry>
+    <entry>
+      <string>SpellCaster</string>
+      <string>com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT</string>
+    </entry>
+    <entry>
+      <string>CreatureClass</string>
+      <string>Cleric</string>
+    </entry>
+    <entry>
+      <string>source</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>product</string>
+      <string>D&amp;D 3.5 Core Rulebook</string>
+    </entry>
+  </__properties>
+  <__rawSource>## Creature Class Template: New Template
+## Class/Race/Template Name
+## NOTE ## Template name must match the name on this line
+CreatureClass=Cleric
+
+## Optional ## Define the type or types of the current creature class template.
+CreatureClassType=Class
+
+## Required ## Define the attack rate ratio as a decimal value 1.0 = +1 per level, .5 is +1 every 2 levels
+AttackRate=.75
+
+## Required ## Hit die per level and hit die type in die format
+HitDie=d8
+
+## Optional ## List saving throw(s) which benefit from a good/trained status as a piped list
+SavingThrows=Fort|Will
+
+## Optional ## List the primary ability/abilities as a piped list
+PrimaryAbility=Wis
+
+## Optional ## List the secondary ability/abilities as a piped list
+SecondaryAbility=
+
+## NOTE ## The following four entries are not currently used to pre-populate characters; However
+## that will change in a near future release. 
+## Optional ## List Skill options as a piped list
+Skills=Concentration|Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knoweldge (The Planes)|Profession|Spellcraft
+
+## Optional ## List Tool options as a piped list
+Tools=
+
+## Optional ## List Armor options as a piped list
+Armor=Light|Medium|Heavy|Shields (Except Tower)
+
+## Optional ## List Weapon options as a piped list
+Weapons=Simple
+
+## Optional ## List the parent class this template is a variant of
+VariantOfClass=
+
+## Optional ## List all variants of the current creature class as a piped list
+Variants=
+
+## REQUIRED ## Features for class header
+Features=Cleric
+
+## FEATURES BY LEVEL ## List features in Feature&lt;level&gt;=piped|list|of|features format
+Features0=
+Features1=Rebuke Undead (Evil)|Turn Undead (Good)
+Features2=
+Features3=
+Features4=
+Features5=
+Features6=
+Features7=
+Features8=
+Features9=
+Features10=
+Features11=
+Features12=
+Features13=
+Features14=
+Features15=
+Features16=
+Features17=
+Features18=
+Features19=
+Features20=
+
+## Optional ## Define the spellcasting template and ability score override to use.
+## NOTE ## this is not required when a Primary Ability line is definied; The FIRST 
+## ability in the Primary Ability line will be used with a default casting template
+## SpellCaster=com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT
+
+## Optional ## Override the system specific Maximum Class Level or define a local Max
+MaxClassLevel=20
+
+## Optional ## GLOBAL SPELLCASTING SETTINGS
+
+## Sets the max spell level for Spell Lists (excluding Special/Domain)
+MaxSpellLevel=9
+
+## Set to true to collapse prepared Special and Spell lists into one casting pool
+SpellUseAllSpellsInLine=false
+
+## Set to true to use Cast and Keep spell memoriztion versus cast and forget
+SpellUseListMemorization=false
+
+## Set to true to keep spells in memory even after having cast them.
+KeepSpellsInMemory=false
+
+## Use to define the SpellCaster Classes capabilities
+## Set to true to use Prepared spell mechanics
+SpellCasterUsePrepared=true
+
+## Set to true to use known/learned spell system
+SpellCasterUseKnown=false
+
+## Set to true to enable domain logic for paths, oaths, circles, bloodlines, etc.
+SpellCasterUseSpecial=true
+
+## USE all spells as prepred spells.
+SpellCasterUseAllSpellsPrepared=false
+
+## Use to define the Spell Editor tab names
+SpellCasterLabels=Spells Prepared|Domain
+
+## Show spells per spell level UI
+SpellCasterUseSlots=true
+
+## Set to true to enable trait/pool based casting -- leave false for now!
+SpellCasterUsePools=false
+
+## Define Spell Lists as List Name|List Name|etc
+SpellLists=Spells
+
+## Set the spell cost by spell level
+##           Spell Level  C|1|2|3|4|5|6|7|8|9
+OverrideSpellCostsByLevel=0|1|1|1|1|1|1|1|1|1
+
+## Spells available by spell level as a piped list of spells possible
+Spells0=Create Water|Cure Minor Wounds|Detect Magic|Detect Poison|Guidance|Inflict Minor Wounds|Light|Mending|Purify Food and Drink|Read Magic|Resistance|Virtue
+Spells1=Bane|Bless|Bless Water|Cause Fear|Command|Comprehend Languages|Cure Light Wounds|Curse Water|Deathwatch|Detect Chaos|Detect Evil|Detect Good|Detect Law|Detect Undead|Divine Favor|Doom|Endure Elements|Entropic Shield|Hide from Undead|Inflict Light Wounds|Magic Stone|Magic Weapon|Obscuring Mist|Protection from Chaos|Protection from Evil|Protection from Good|Protection from Law|Remove Fear|Sanctuary|Shield of Faith|Summon Monster I
+Spells2=Aid|Align Weapon|Augury|Bear&apos;s Endurance|Bull&apos;s Strength|Calm Emotions|Consecrate|Cure Moderate Wounds|Darkness|Death Knell|Delay Poison|Desecrate|Eagle&apos;s Splendor|Enthrall|Find Traps|Gentle Repose|Hold Person|Inflict Moderate Wounds|Make Whole|Owl&apos;s Wisdom|Remove Paralysis|Resist Energy|Restoration, Lesser|Shatter|Shield Other|Silence|Sound Burst|Spiritual Weapon|Status|Summon Monster II|Undetectable Alignment|Zone of Truth
+Spells3=Animate Dead|Bestow Curse|Blindness/Deafness|Contagion|Continual Flame|Create Food and Water|Cure Serious Wounds|Daylight|Deeper Darkness|Dispel Magic|Glyph of Warding|Helping Hand|Inflict Serious Wounds|Invisibility Purge|Locate Object|Magic Circle against Chaos|Magic Circle against Evil|Magic Circle against Good|Magic Circle against Law|Magic Vestment|Meld into Stone|Obscure Object|Prayer|Protection from Energy|Remove Blindness/Deafness|Remove Curse|Remove Disease|Searing Light|Speak with Dead|Stone Shape|Summon Monster III|Water Breathing|Water Walk|Wind Wall
+Spells4=Air Walk|Control Water|Cure Critical Wounds|Death Ward|Dimensional Anchor|Discern Lies|Dismissal|Divination|Divine Power|Freedom of Movement|Giant Vermin|Imbue with Spell Ability|Inflict Critical Wounds|Magic Weapon, Greater|Neutralize Poison|Planar Ally, Lesser|Poison|Repel Vermin|Restoration|Sending|Spell Immunity|Summon Monster IV|Tongues
+Spells5=Atonement|Break Enchantment|Command, Greater|Commune|Cure Light Wounds, Mass|Dispel Chaos|Dispel Evil|Dispel Good|Dispel Law|Disrupting Weapon|Flame Strike|Hallow|Inflict Light Wounds, Mass|Insect Plague|Mark of Justice|Plane Shift|Raise Dead|Righteous Might|Scrying|Slay Living|Spell Resistance|Summon Monster V|Symbol of Pain|Symbol of Sleep|True Seeing|Unhallow|Wall of Stone
+Spells6=Animate Objects|Antilife Shell|Banishment|Bear&apos;s Endurance, Mass|Blade Barrier|Bull&apos;s Strength, Mass|Create Undead|Cure Moderate Wounds, Mass|Dispel Magic, Greater|Eagle&apos;s Splendor, Mass|Find the Path|Forbiddance|Geas/Quest|Glyph of Warding, Greater|Harm|Heal|Heroes&apos; Feast|Inflict Moderate Wounds, Mass|Owl&apos;s Wisdom, Mass|Planar Ally|Summon Monster VI|Symbol of Fear|Symbol of Persuasion|Undeath to Death|Wind Walk|Word of Recall
+Spells7=Blasphemy|Control Weather|Cure Serious Wounds, Mass|Destruction|Dictum|Ethereal Jaunt|Holy Word|Inflict Serious Wounds, Mass|Refuge|Regenerate|Repulsion|Restoration, Greater|Resurrection|Scrying, Greater|Summon Monster VII|Symbol of Stunning|Symbol of Weakness|Word of Chaos
+Spells8=Antimagic Field|Cloak of Chaos|Create Greater Undead|Cure Critical Wounds, Mass|Dimensional Lock|Discern Location|Earthquake|Fire Storm|Holy Aura|Planar Ally, Greater|Inflict Critical Wounds, Mass|Shield of Law|Spell Immunity, Greater|Summon Monster VIII|Symbol of Death|Symbol of Insanity|Unholy Aura
+Spells9=Astral Projection|Energy Drain|Etherealness|Gate|Heal, Mass|Implosion|Miracle|Soul Bind|Storm of Vengeance|Summon Monster IX|True Resurrection
+
+## Spells Per Day by caster level as a piped list by spell level
+##        | | | | | | | | | |1
+##       0|1|2|3|4|5|6|7|8|9|0
+ PerDay1=3|1
+ PerDay2=4|2
+ PerDay3=4|2|1
+ PerDay4=5|3|2
+ PerDay5=5|3|2|1
+ PerDay6=5|3|3|2
+ PerDay7=6|4|3|2|1
+ PerDay8=6|4|3|3|2
+ PerDay9=6|4|4|3|2|1
+PerDay10=6|4|4|3|3|2
+PerDay11=6|5|4|4|3|2|1
+PerDay12=6|5|4|4|3|3|2
+PerDay13=6|5|5|4|4|3|2|1
+PerDay14=6|5|5|4|4|3|3|2
+PerDay15=6|5|5|5|4|4|3|2|1
+PerDay16=6|5|5|5|4|4|3|3|2
+PerDay17=6|5|5|5|5|4|4|3|2|1
+PerDay18=6|5|5|5|5|4|4|3|3|2
+PerDay19=6|5|5|5|5|5|4|4|3|3
+PerDay20=6|5|5|5|5|5|4|4|4|4
+##        | | | | | | | | | |1
+##       0|1|2|3|4|5|6|7|8|9|0
+
+ Prepared1=4|1
+ Prepared2=5|2
+ Prepared3=6|2|1
+ Prepared4=7|3|2
+ Prepared5=8|3|2|1
+ Prepared6=9|3|3|2
+ Prepared7=9|4|3|2|1
+ Prepared8=9|4|3|3|2
+ Prepared9=9|4|4|3|2|1
+Prepared10=9|4|4|3|3|2
+Prepared11=9|5|4|4|3|2|1
+Prepared12=16|5|4|4|3|3|2
+Prepared13=16|5|5|4|4|3|2|1
+Prepared14=16|5|5|4|4|3|3|2
+Prepared15=16|5|5|5|4|4|3|2|1
+Prepared16=16|5|5|5|4|4|3|3|2
+Prepared17=16|5|5|5|5|4|4|3|2|1
+Prepared18=16|5|5|5|5|4|4|3|3|2
+Prepared19=16|5|5|5|5|5|4|4|3|3
+Prepared20=16|5|5|5|5|5|4|4|4|4
+
+## DOMAIN EXAMPLE
+## When using Spells by level definition, each level can contain a piped list
+## of spells. Each level row can contain as many spells as you want/need.
+
+## Set to true to use SpellsByLevel declarations rather than Domain List declarations
+##
+## example: when false: DomainPrimary=Spell|Spell|Spell|Spell
+##
+## Example: when true: 
+##
+##     Primary1=Spell
+##     Primary2=Spell
+##     Primary3=Spell
+##     Primary4=
+##     Primary5=
+##     Primary6=
+##     Primary7=
+##     Primary8=
+##     Primary9=
+##     Primary10=
+##     Primary11=
+##     Primary12=
+##     Primary13=
+##     Primary14=
+##     Primary15=
+##     Primary16=
+##     Primary17=
+##     Primary18=
+##     Primary19=
+##     Primary20=
+##
+DomainUseSpellByLevel=true
+
+## OPTIONAL ## Define Domain Lists as List Name|List Name|etc
+## NOTE ## DomainList is not used when DomainUseSpellByLevel=false
+
+DomainLists=Air|Animal|Chaos|Charm|Death|Destruction|Earth|Evil|Fire|Good|Healing|Knowledge|Law|Luck|Magic|Plant|Protection|Strength|Sun|Travel|Trickery|War|Water
+
+## EXAMPLE Domain when DomainUseSpellByLevel=false ##
+## When using the default Domain definition, Domain name is preceded by Domain
+## and the list contains all spells granted in order. To skip a level, you will
+## need to insert a blank || entry between levels with granted spells.
+## DomainExample=Ex0|Ex1|Ex2|Ex3|Ex4|EX5
+
+## OPTIONAL ## Set the number of spell slots for memorization of domain spells if applicable
+DomainSpellSlotsPerLevel=1
+
+## OPTIONAL ## Set the ratio by which the spell level is determined 
+## NOTE ## When using DomainuseSpellByLevel=true, leave DomainSpellRate equal to 1 as this will## read spell entries from each [domain name][@level]= line.## [ Class Level * SpellRate ] Rounded down = Spell Level
+DomainSpellRate=.5
+
+## OPTIONAL ## Set the minimum spell level for Domain Spells 
+DomainMinSpellLevel=1
+
+## OPTIONAL ## Set the maximum spell level for Domain Spells
+DomainMaxSpellLevel=9
+
+Air0=
+Air1=Obscuring Mist
+Air2=
+Air3=Wind Wall
+Air4=
+Air5=Gaseous Form
+Air6=
+Air7=Air Walk
+Air8=
+Air9=Control Winds
+Air10=
+Air11=Chain Lightning
+Air12=
+Air13=Control Weather
+Air14=
+Air15=Whirlwind
+Air16=
+Air17=Elemental Swarm
+Air18=
+Air19=
+Air20=
+
+Animal0=
+Animal1=Calm Animals
+Animal2=
+Animal3=Hold Animal
+Animal4=
+Animal5=Dominate Animal
+Animal6=
+Animal7=Summon Nature&apos;s Ally IV
+Animal8=
+Animal9=Commune with Nature
+Animal10=
+Animal11=Antilife Shell
+Animal12=
+Animal13=Animal Shapes
+Animal14=
+Animal15=Summon Nature&apos;s Ally VIII
+Animal16=
+Animal17=Shapechange
+Animal18=
+Animal19=
+Animal20=
+
+
+Chaos0=
+Chaos1=Protection from Law
+Chaos2=
+Chaos3=Shatter
+Chaos4=
+Chaos5=Magic Circle against Law
+Chaos6=
+Chaos7=Chaos Hammer
+Chaos8=
+Chaos9=Dispel Law
+Chaos10=
+Chaos11=Animate Objects
+Chaos12=
+Chaos13=Word of Chaos
+Chaos14=
+Chaos15=Cloak of Chaos
+Chaos16=
+Chaos17=Summon Monster IX
+Chaos18=
+Chaos19=
+Chaos20=
+
+Charm0=
+Charm1=Charm Person
+Charm2=
+Charm3=Calm Emotions
+Charm4=
+Charm5=Suggestion
+Charm6=
+Charm7=Fear
+Charm8=
+Charm9=Charm Monster
+Charm10=
+Charm11=Geas/Quest
+Charm11=
+Charm13=Insanity
+Charm14=
+Charm15=Demand
+Charm16=
+Charm17=Dominate Monster
+Charm18=
+Charm19=
+Charm20=
+
+Death0=
+Death1=Cause Fear
+Death2=
+Death3=Death Knell
+Death4=
+Death5=Animate Dead
+Death6=
+Death7=Death Ward
+Death8=
+Death9=Slay Living
+Death10=
+Death11=Create Undead
+Death12=
+Death13=Destruction
+Death14=
+Death15=Create Greater Undead
+Death16=
+Death17=Wail of the Banshee
+Death18=
+Death19=
+Death20=
+
+Destruction0=
+Destruction1=Inflict Light Wounds
+Destruction2=
+Destruction3=Shatter
+Destruction4=
+Destruction5=Contagion
+Destruction6=
+Destruction7=Inflict Critical Wounds
+Destruction8=
+Destruction9=Inflict Light Wounds, Mass
+Destruction10=
+Destruction11=Harm
+Destruction12=
+Destruction13=Disintegrate
+Destruction14=
+Destruction15=Earthquake
+Destruction16=
+Destruction17=Implosion
+Destruction18=
+Destruction19=
+Destruction20=
+
+Earth0=
+Earth1=Magic Stone
+Earth2=
+Earth3=Soften Earth and Stone
+Earth4=
+Earth5=Stone Shape
+Earth6=
+Earth7=Spike Stones
+Earth8=
+Earth9=Wall of Stone
+Earth10=
+Earth11=Stoneskin
+Earth12=
+Earth13=Earthquake
+Earth14=
+Earth15=Iron Body
+Earth16=
+Earth17=Elemental Swarm
+Earth18=
+Earth19=
+Earth20=
+
+Evil0=
+Evil1=Protection from Good
+Evil2=
+Evil3=Desecrate
+Evil4=
+Evil5=Magic Circle against Good
+Evil6=
+Evil7=Unholy Blight
+Evil8=
+Evil9=Dispel Good
+Evil10=
+Evil11=Create Undead
+Evil12=
+Evil13=Blasphemy
+Evil14=
+Evil15=Unholy Aura
+Evil16=
+Evil17=Summon Monster IX
+Evil18=
+Evil19=
+Evil20=
+
+Fire0=
+Fire1=Burning Hands
+Fire2=
+Fire3=Produce Flame
+Fire4=
+Fire5=Resist Energy
+Fire6=
+Fire7=Wall of Fire
+Fire8=
+Fire9=Fire Shield
+Fire10=
+Fire11=Fire Seeds
+Fire12=
+Fire13=Fire Storm
+Fire14=
+Fire15=Incendiary Cloud
+Fire16=
+Fire17=Elemental Swarm
+Fire18=
+Fire19=
+Fire20=
+
+Good0=
+Good1=Protection from Evil
+Good2=
+Good3=Aid
+Good4=
+Good5=Magic Circle against Evil
+Good6=
+Good7=Holy Smite
+Good8=
+Good9=Dispel Evil
+Good10=
+Good11=Blade Barrier
+Good12=
+Good13=Holy Word
+Good14=
+Good15=Holy Aura
+Good16=
+Good17=Summon Monster IX
+Good18=
+Good19=
+Good20=
+
+Healing0=
+Healing1=Cure Light Wounds
+Healing2=
+Healing3=Cure Moderate Wounds
+Healing4=
+Healing5=Cure Serious Wounds
+Healing6=
+Healing7=Cure Critical Wounds
+Healing8=
+Healing9=Cure Light Wounds, Mass
+Healing10=
+Healing11=Heal
+Healing12=
+Healing13=Regenerate
+Healing14=
+Healing15=Cure Critical Wounds, Mass
+Healing16=
+Healing17=Heal, Mass
+Healing18=
+Healing19=
+Healing20=
+
+Knowledge0=
+Knowledge1=Detect Secret Doors
+Knowledge2=
+Knowledge3=Detect Thoughts
+Knowledge4=
+Knowledge5=Clairaudience/Clairvoyance
+Knowledge6=
+Knowledge7=Divination
+Knowledge8=
+Knowledge9=True Seeing
+Knowledge10=
+Knowledge11=Find the Path
+Knowledge12=
+Knowledge13=Legend Lore
+Knowledge14=
+Knowledge15=Discern Location
+Knowledge16=
+Knowledge17=Foresight
+Knowledge18=
+Knowledge19=
+Knowledge20=
+
+Law0=
+Law1=Protection from Chaos
+Law2=
+Law3=Calm Emotions
+Law4=
+Law5=Magic Circle against Chaos
+Law6=
+Law7=Order&apos;s Wrath
+Law8=
+Law9=Dispel Chaos
+Law10=
+Law11=Hold Monster
+Law12=
+Law13=Dictum
+Law14=
+Law15=Shield of Law
+Law16=
+Law17=Summon Monster IX
+Law18=
+Law19=
+Law20=
+
+Luck0=
+Luck1=Entropic Shield
+Luck2=
+Luck3=Aid
+Luck4=
+Luck5=Protection from Energy
+Luck6=
+Luck7=Freedom of Movement
+Luck8=
+Luck9=Break Enchantment
+Luck10=
+Luck11=Mislead
+Luck12=
+Luck13=Spell Turning
+Luck14=
+Luck15=Moment of Prescience
+Luck16=
+Luck17=Miracle
+Luck18=
+Luck19=
+Luck20=
+
+Magic0=
+Magic1=Magic Aura
+Magic2=
+Magic3=Identify
+Magic4=
+Magic5=Dispel Magic
+Magic6=
+Magic7=Imbue with Spell Ability
+Magic8=
+Magic9=Spell Resistance
+Magic10=
+Magic11=Antimagic Field
+Magic12=
+Magic13=Spell Turning
+Magic14=
+Magic15=Protection from Spells
+Magic16=
+Magic17=Mage&apos;s Disjunction
+Magic18=
+Magic19=
+Magic20=
+
+Plant0=
+Plant1=Entangle
+Plant2=
+Plant3=Barkskin
+Plant4=
+Plant5=Plant Growth
+Plant6=
+Plant7=Command Plants
+Plant8=
+Plant9=Wall of Thorns
+Plant10=
+Plant11=Repel Wood
+Plant12=
+Plant13=Animate Plants
+Plant14=
+Plant15=Control Plants
+Plant16=
+Plant17=Shambler
+Plant18=
+Plant19=
+Plant20=
+
+Protection0=
+Protection1=Sanctuary
+Protection2=
+Protection3=Shield Other
+Protection4=
+Protection5=Protection from Energy
+Protection6=
+Protection7=Spell Immunity
+Protection8=
+Protection9=Spell Resistance
+Protection10=
+Protection11=Antimagic Field
+Protection12=
+Protection13=Repulsion
+Protection14=
+Protection15=Mind Blank
+Protection16=
+Protection17=Prismatic Sphere
+Protection18=
+Protection19=
+Protection20=
+
+Strength0=
+Strength1=Enlarge Person
+Strength2=
+Strength3=Bull&apos;s Strength
+Strength4=
+Strength5=Magic Vestment
+Strength6=
+Strength7=Spell Immunity
+Strength8=
+Strength9=Righteous Might
+Strength10=
+Strength11=Stoneskin
+Strength12=
+Strength13=Grasping Hand
+Strength14=
+Strength15=Clenched Fist
+Strength16=
+Strength17=Crushing Hand
+Strength18=
+Strength19=
+Strength20=
+
+Sun0=
+Sun1=Endure Elements
+Sun2=
+Sun3=Heat Metal
+Sun4=
+Sun5=Searing Light
+Sun6=
+Sun7=Fire Shield
+Sun8=
+Sun9=Flame Strike
+Sun10=
+Sun11=Fire Seeds
+Sun12=
+Sun13=Sunbeam
+Sun14=
+Sun15=Sunburst
+Sun16=
+Sun17=Prismatic Sphere
+Sun18=
+Sun19=
+Sun20=
+
+Travel0=
+Travel1=Longstrider
+Travel2=
+Travel3=Locate Object
+Travel4=
+Travel5=Fly
+Travel6=
+Travel7=Dimension Door
+Travel8=
+Travel9=Teleport
+Travel10=
+Travel11=Find the Path
+Travel12=
+Travel13=Teleport, Greater
+Travel14=
+Travel15=Phase Door
+Travel16=
+Travel17=Astral Projection
+Travel18=
+Travel19=
+Travel20=
+
+Trickery0=
+Trickery1=Disguise Self
+Trickery2=
+Trickery3=Invisibility
+Trickery4=
+Trickery5=Nondetection
+Trickery6=
+Trickery7=Confusion
+Trickery8=
+Trickery9=False Vision
+Trickery10=
+Trickery11=Mislead
+Trickery12=
+Trickery13=Screen
+Trickery14=
+Trickery15=Polymorph Any Object
+Trickery16=
+Trickery17=Time Stop
+Trickery18=
+Trickery19=
+Trickery20=
+
+War0=
+War1=Magic Weapon
+War2=
+War3=Spiritual Weapon
+War4=
+War5=Magic Vestment
+War6=
+War7=Divine Power
+War8=
+War9=Flame Strike
+War10=
+War11=Blade Barrier
+War12=
+War13=Power Word Blind
+War14=
+War15=Power Word Stun
+War16=
+War17=Power Word Kill
+War18=
+War19=
+War20=
+
+Water0=
+Water1=Obscuring Mist
+Water2=
+Water3=Fog Cloud
+Water4=
+Water5=Water Breathing
+Water6=
+Water7=Control Water
+Water8=
+Water9=Ice Storm
+Water10=
+Water11=Cone of Cold
+Water12=
+Water13=Acid Fog
+Water14=
+Water15=Horrid Wilting
+Water16=
+Water17=Elemental Swarm
+Water18=
+Water19=
+Water20=</__rawSource>
+  <__rawProperties>
+    <property name="Sun15" value="Sunburst"/>
+    <property name="Weapons" value="Simple"/>
+    <property name="Evil9" value="Dispel Good"/>
+    <property name="Sun13" value="Sunbeam"/>
+    <property name="Evil7" value="Unholy Blight"/>
+    <property name="Earth9" value="Wall of Stone"/>
+    <property name="Sun11" value="Fire Seeds"/>
+    <property name="Evil5" value="Magic Circle against Good"/>
+    <property name="Earth7" value="Spike Stones"/>
+    <property name="Evil3" value="Desecrate"/>
+    <property name="Earth5" value="Stone Shape"/>
+    <property name="Evil1" value="Protection from Good"/>
+    <property name="Earth3" value="Soften Earth and Stone"/>
+    <property name="Earth1" value="Magic Stone"/>
+    <property name="Law17" value="Summon Monster IX"/>
+    <property name="Law15" value="Shield of Law"/>
+    <property name="Law13" value="Dictum"/>
+    <property name="Law11" value="Hold Monster"/>
+    <property name="Features1" value="Rebuke Undead (Evil)|Turn Undead (Good)"/>
+    <property name="Luck17" value="Miracle"/>
+    <property name="Luck15" value="Moment of Prescience"/>
+    <property name="Luck13" value="Spell Turning"/>
+    <property name="Luck11" value="Mislead"/>
+    <property name="SpellUseAllSpellsInLine" value="false"/>
+    <property name="Sun9" value="Flame Strike"/>
+    <property name="Sun7" value="Fire Shield"/>
+    <property name="product" value="D&amp;D 3.5 Core Rulebook"/>
+    <property name="Sun5" value="Searing Light"/>
+    <property name="SpellUseListMemorization" value="false"/>
+    <property name="Sun3" value="Heat Metal"/>
+    <property name="Sun1" value="Endure Elements"/>
+    <property name="Air9" value="Control Winds"/>
+    <property name="Air7" value="Air Walk"/>
+    <property name="Air5" value="Gaseous Form"/>
+    <property name="Air3" value="Wind Wall"/>
+    <property name="Air1" value="Obscuring Mist"/>
+    <property name="SpellCasterUseAllSpellsPrepared" value="false"/>
+    <property name="DomainMinSpellLevel" value="1"/>
+    <property name="SpellCasterUsePrepared" value="true"/>
+    <property name="SpellCaster" value="com.mindgene.d20.plugin.dnd.creature.SpellCasterTemplate_Prepared|INT"/>
+    <property name="Death9" value="Slay Living"/>
+    <property name="SpellCasterUseSpecial" value="true"/>
+    <property name="Death7" value="Death Ward"/>
+    <property name="Death5" value="Animate Dead"/>
+    <property name="Death3" value="Death Knell"/>
+    <property name="Spells9" value="Astral Projection|Energy Drain|Etherealness|Gate|Heal, Mass|Implosion|Miracle|Soul Bind|Storm of Vengeance|Summon Monster IX|True Resurrection"/>
+    <property name="Spells8" value="Antimagic Field|Cloak of Chaos|Create Greater Undead|Cure Critical Wounds, Mass|Dimensional Lock|Discern Location|Earthquake|Fire Storm|Holy Aura|Planar Ally, Greater|Inflict Critical Wounds, Mass|Shield of Law|Spell Immunity, Greater|Summon Monster VIII|Symbol of Death|Symbol of Insanity|Unholy Aura"/>
+    <property name="Death1" value="Cause Fear"/>
+    <property name="Spells7" value="Blasphemy|Control Weather|Cure Serious Wounds, Mass|Destruction|Dictum|Ethereal Jaunt|Holy Word|Inflict Serious Wounds, Mass|Refuge|Regenerate|Repulsion|Restoration, Greater|Resurrection|Scrying, Greater|Summon Monster VII|Symbol of Stunning|Symbol of Weakness|Word of Chaos"/>
+    <property name="Spells6" value="Animate Objects|Antilife Shell|Banishment|Bear&apos;s Endurance, Mass|Blade Barrier|Bull&apos;s Strength, Mass|Create Undead|Cure Moderate Wounds, Mass|Dispel Magic, Greater|Eagle&apos;s Splendor, Mass|Find the Path|Forbiddance|Geas/Quest|Glyph of Warding, Greater|Harm|Heal|Heroes&apos; Feast|Inflict Moderate Wounds, Mass|Owl&apos;s Wisdom, Mass|Planar Ally|Summon Monster VI|Symbol of Fear|Symbol of Persuasion|Undeath to Death|Wind Walk|Word of Recall"/>
+    <property name="Spells5" value="Atonement|Break Enchantment|Command, Greater|Commune|Cure Light Wounds, Mass|Dispel Chaos|Dispel Evil|Dispel Good|Dispel Law|Disrupting Weapon|Flame Strike|Hallow|Inflict Light Wounds, Mass|Insect Plague|Mark of Justice|Plane Shift|Raise Dead|Righteous Might|Scrying|Slay Living|Spell Resistance|Summon Monster V|Symbol of Pain|Symbol of Sleep|True Seeing|Unhallow|Wall of Stone"/>
+    <property name="Spells4" value="Air Walk|Control Water|Cure Critical Wounds|Death Ward|Dimensional Anchor|Discern Lies|Dismissal|Divination|Divine Power|Freedom of Movement|Giant Vermin|Imbue with Spell Ability|Inflict Critical Wounds|Magic Weapon, Greater|Neutralize Poison|Planar Ally, Lesser|Poison|Repel Vermin|Restoration|Sending|Spell Immunity|Summon Monster IV|Tongues"/>
+    <property name="Spells3" value="Animate Dead|Bestow Curse|Blindness/Deafness|Contagion|Continual Flame|Create Food and Water|Cure Serious Wounds|Daylight|Deeper Darkness|Dispel Magic|Glyph of Warding|Helping Hand|Inflict Serious Wounds|Invisibility Purge|Locate Object|Magic Circle against Chaos|Magic Circle against Evil|Magic Circle against Good|Magic Circle against Law|Magic Vestment|Meld into Stone|Obscure Object|Prayer|Protection from Energy|Remove Blindness/Deafness|Remove Curse|Remove Disease|Searing Light|Speak with Dead|Stone Shape|Summon Monster III|Water Breathing|Water Walk|Wind Wall"/>
+    <property name="Spells2" value="Aid|Align Weapon|Augury|Bear&apos;s Endurance|Bull&apos;s Strength|Calm Emotions|Consecrate|Cure Moderate Wounds|Darkness|Death Knell|Delay Poison|Desecrate|Eagle&apos;s Splendor|Enthrall|Find Traps|Gentle Repose|Hold Person|Inflict Moderate Wounds|Make Whole|Owl&apos;s Wisdom|Remove Paralysis|Resist Energy|Restoration, Lesser|Shatter|Shield Other|Silence|Sound Burst|Spiritual Weapon|Status|Summon Monster II|Undetectable Alignment|Zone of Truth"/>
+    <property name="Spells1" value="Bane|Bless|Bless Water|Cause Fear|Command|Comprehend Languages|Cure Light Wounds|Curse Water|Deathwatch|Detect Chaos|Detect Evil|Detect Good|Detect Law|Detect Undead|Divine Favor|Doom|Endure Elements|Entropic Shield|Hide from Undead|Inflict Light Wounds|Magic Stone|Magic Weapon|Obscuring Mist|Protection from Chaos|Protection from Evil|Protection from Good|Protection from Law|Remove Fear|Sanctuary|Shield of Faith|Summon Monster I"/>
+    <property name="Spells0" value="Create Water|Cure Minor Wounds|Detect Magic|Detect Poison|Guidance|Inflict Minor Wounds|Light|Mending|Purify Food and Drink|Read Magic|Resistance|Virtue"/>
+    <property name="Prepared9" value="9|4|4|3|2|1"/>
+    <property name="Prepared8" value="9|4|3|3|2"/>
+    <property name="Prepared7" value="9|4|3|2|1"/>
+    <property name="Prepared6" value="9|3|3|2"/>
+    <property name="Prepared5" value="8|3|2|1"/>
+    <property name="Prepared4" value="7|3|2"/>
+    <property name="Prepared3" value="6|2|1"/>
+    <property name="Prepared2" value="5|2"/>
+    <property name="Prepared1" value="4|1"/>
+    <property name="Destruction17" value="Implosion"/>
+    <property name="Destruction15" value="Earthquake"/>
+    <property name="Destruction13" value="Disintegrate"/>
+    <property name="Destruction11" value="Harm"/>
+    <property name="Earth17" value="Elemental Swarm"/>
+    <property name="Earth15" value="Iron Body"/>
+    <property name="Earth13" value="Earthquake"/>
+    <property name="Earth11" value="Stoneskin"/>
+    <property name="Death17" value="Wail of the Banshee"/>
+    <property name="Death15" value="Create Greater Undead"/>
+    <property name="Death13" value="Destruction"/>
+    <property name="Death11" value="Create Undead"/>
+    <property name="Water17" value="Elemental Swarm"/>
+    <property name="SavingThrows" value="Fort|Will"/>
+    <property name="Water15" value="Horrid Wilting"/>
+    <property name="Water13" value="Acid Fog"/>
+    <property name="Water11" value="Cone of Cold"/>
+    <property name="Knowledge9" value="True Seeing"/>
+    <property name="Healing9" value="Cure Light Wounds, Mass"/>
+    <property name="Knowledge7" value="Divination"/>
+    <property name="Healing7" value="Cure Critical Wounds"/>
+    <property name="Strength17" value="Crushing Hand"/>
+    <property name="Plant9" value="Wall of Thorns"/>
+    <property name="Knowledge5" value="Clairaudience/Clairvoyance"/>
+    <property name="Healing5" value="Cure Serious Wounds"/>
+    <property name="Strength15" value="Clenched Fist"/>
+    <property name="Plant7" value="Command Plants"/>
+    <property name="Knowledge3" value="Detect Thoughts"/>
+    <property name="Healing3" value="Cure Moderate Wounds"/>
+    <property name="Strength13" value="Grasping Hand"/>
+    <property name="Plant5" value="Plant Growth"/>
+    <property name="Knowledge1" value="Detect Secret Doors"/>
+    <property name="Healing1" value="Cure Light Wounds"/>
+    <property name="Strength11" value="Stoneskin"/>
+    <property name="Plant3" value="Barkskin"/>
+    <property name="Air17" value="Elemental Swarm"/>
+    <property name="Plant1" value="Entangle"/>
+    <property name="Air15" value="Whirlwind"/>
+    <property name="MaxSpellLevel" value="9"/>
+    <property name="Air13" value="Control Weather"/>
+    <property name="Fire17" value="Elemental Swarm"/>
+    <property name="Air11" value="Chain Lightning"/>
+    <property name="AttackRate" value=".75"/>
+    <property name="Fire15" value="Incendiary Cloud"/>
+    <property name="SpellCasterLabels" value="Spells Prepared|Domain"/>
+    <property name="Fire13" value="Fire Storm"/>
+    <property name="Fire11" value="Fire Seeds"/>
+    <property name="PerDay20" value="6|5|5|5|5|5|4|4|4|4"/>
+    <property name="DomainUseSpellByLevel" value="true"/>
+    <property name="Healing17" value="Heal, Mass"/>
+    <property name="Healing15" value="Cure Critical Wounds, Mass"/>
+    <property name="Evil17" value="Summon Monster IX"/>
+    <property name="Healing13" value="Regenerate"/>
+    <property name="Evil15" value="Unholy Aura"/>
+    <property name="Healing11" value="Heal"/>
+    <property name="Evil13" value="Blasphemy"/>
+    <property name="Evil11" value="Create Undead"/>
+    <property name="Strength9" value="Righteous Might"/>
+    <property name="PerDay19" value="6|5|5|5|5|5|4|4|3|3"/>
+    <property name="PerDay18" value="6|5|5|5|5|4|4|3|3|2"/>
+    <property name="Strength7" value="Spell Immunity"/>
+    <property name="PerDay17" value="6|5|5|5|5|4|4|3|2|1"/>
+    <property name="PerDay16" value="6|5|5|5|4|4|3|3|2"/>
+    <property name="Strength5" value="Magic Vestment"/>
+    <property name="PerDay15" value="6|5|5|5|4|4|3|2|1"/>
+    <property name="PerDay14" value="6|5|5|4|4|3|3|2"/>
+    <property name="Strength3" value="Bull&apos;s Strength"/>
+    <property name="PerDay13" value="6|5|5|4|4|3|2|1"/>
+    <property name="PerDay12" value="6|5|4|4|3|3|2"/>
+    <property name="Strength1" value="Enlarge Person"/>
+    <property name="PerDay11" value="6|5|4|4|3|2|1"/>
+    <property name="PerDay10" value="6|4|4|3|3|2"/>
+    <property name="Prepared20" value="16|5|5|5|5|5|4|4|4|4"/>
+    <property name="Charm9" value="Charm Monster"/>
+    <property name="Magic9" value="Spell Resistance"/>
+    <property name="Magic7" value="Imbue with Spell Ability"/>
+    <property name="Charm7" value="Fear"/>
+    <property name="Magic5" value="Dispel Magic"/>
+    <property name="Charm5" value="Suggestion"/>
+    <property name="Magic3" value="Identify"/>
+    <property name="Charm3" value="Calm Emotions"/>
+    <property name="Magic1" value="Magic Aura"/>
+    <property name="Charm1" value="Charm Person"/>
+    <property name="SpellLists" value="Spells"/>
+    <property name="Prepared19" value="16|5|5|5|5|5|4|4|3|3"/>
+    <property name="KeepSpellsInMemory" value="false"/>
+    <property name="Prepared18" value="16|5|5|5|5|4|4|3|3|2"/>
+    <property name="Prepared17" value="16|5|5|5|5|4|4|3|2|1"/>
+    <property name="Prepared16" value="16|5|5|5|4|4|3|3|2"/>
+    <property name="Prepared15" value="16|5|5|5|4|4|3|2|1"/>
+    <property name="Prepared14" value="16|5|5|4|4|3|3|2"/>
+    <property name="Prepared13" value="16|5|5|4|4|3|2|1"/>
+    <property name="Protection17" value="Prismatic Sphere"/>
+    <property name="Prepared12" value="16|5|4|4|3|3|2"/>
+    <property name="Prepared11" value="9|5|4|4|3|2|1"/>
+    <property name="Protection15" value="Mind Blank"/>
+    <property name="Prepared10" value="9|4|4|3|3|2"/>
+    <property name="Armor" value="Light|Medium|Heavy|Shields (Except Tower)"/>
+    <property name="Protection13" value="Repulsion"/>
+    <property name="Protection11" value="Antimagic Field"/>
+    <property name="DomainSpellSlotsPerLevel" value="1"/>
+    <property name="Water9" value="Ice Storm"/>
+    <property name="Water7" value="Control Water"/>
+    <property name="Water5" value="Water Breathing"/>
+    <property name="Magic17" value="Mage&apos;s Disjunction"/>
+    <property name="Water3" value="Fog Cloud"/>
+    <property name="Magic15" value="Protection from Spells"/>
+    <property name="Water1" value="Obscuring Mist"/>
+    <property name="Magic13" value="Spell Turning"/>
+    <property name="Magic11" value="Antimagic Field"/>
+    <property name="DomainLists" value="Air|Animal|Chaos|Charm|Death|Destruction|Earth|Evil|Fire|Good|Healing|Knowledge|Law|Luck|Magic|Plant|Protection|Strength|Sun|Travel|Trickery|War|Water"/>
+    <property name="DomainSpellRate" value=".5"/>
+    <property name="MaxClassLevel" value="20"/>
+    <property name="War17" value="Power Word Kill"/>
+    <property name="Trickery17" value="Time Stop"/>
+    <property name="War15" value="Power Word Stun"/>
+    <property name="Trickery15" value="Polymorph Any Object"/>
+    <property name="War13" value="Power Word Blind"/>
+    <property name="Trickery13" value="Screen"/>
+    <property name="War11" value="Blade Barrier"/>
+    <property name="Trickery11" value="Mislead"/>
+    <property name="Good17" value="Summon Monster IX"/>
+    <property name="Knowledge17" value="Foresight"/>
+    <property name="Good15" value="Holy Aura"/>
+    <property name="Knowledge15" value="Discern Location"/>
+    <property name="Good13" value="Holy Word"/>
+    <property name="Knowledge13" value="Legend Lore"/>
+    <property name="Good9" value="Dispel Evil"/>
+    <property name="Good11" value="Blade Barrier"/>
+    <property name="Knowledge11" value="Find the Path"/>
+    <property name="Good7" value="Holy Smite"/>
+    <property name="Good5" value="Magic Circle against Evil"/>
+    <property name="Good3" value="Aid"/>
+    <property name="Good1" value="Protection from Evil"/>
+    <property name="Animal9" value="Commune with Nature"/>
+    <property name="Animal7" value="Summon Nature&apos;s Ally IV"/>
+    <property name="Animal5" value="Dominate Animal"/>
+    <property name="Animal3" value="Hold Animal"/>
+    <property name="Animal1" value="Calm Animals"/>
+    <property name="War9" value="Flame Strike"/>
+    <property name="War7" value="Divine Power"/>
+    <property name="War5" value="Magic Vestment"/>
+    <property name="War3" value="Spiritual Weapon"/>
+    <property name="War1" value="Magic Weapon"/>
+    <property name="Charm17" value="Dominate Monster"/>
+    <property name="Charm15" value="Demand"/>
+    <property name="Chaos17" value="Summon Monster IX"/>
+    <property name="Charm13" value="Insanity"/>
+    <property name="Chaos15" value="Cloak of Chaos"/>
+    <property name="Charm11" value="Geas/Quest"/>
+    <property name="Chaos13" value="Word of Chaos"/>
+    <property name="Chaos11" value="Animate Objects"/>
+    <property name="Travel17" value="Astral Projection"/>
+    <property name="Travel15" value="Phase Door"/>
+    <property name="Travel13" value="Teleport, Greater"/>
+    <property name="Travel11" value="Find the Path"/>
+    <property name="OverrideSpellCostsByLevel" value="0|1|1|1|1|1|1|1|1|1"/>
+    <property name="Law9" value="Dispel Chaos"/>
+    <property name="Law7" value="Order&apos;s Wrath"/>
+    <property name="Law5" value="Magic Circle against Chaos"/>
+    <property name="Law3" value="Calm Emotions"/>
+    <property name="Law1" value="Protection from Chaos"/>
+    <property name="HitDie" value="d8"/>
+    <property name="SpellCasterUseKnown" value="false"/>
+    <property name="Travel9" value="Teleport"/>
+    <property name="Travel7" value="Dimension Door"/>
+    <property name="Travel5" value="Fly"/>
+    <property name="Travel3" value="Locate Object"/>
+    <property name="Travel1" value="Longstrider"/>
+    <property name="PrimaryAbility" value="Wis"/>
+    <property name="Destruction9" value="Inflict Light Wounds, Mass"/>
+    <property name="Destruction7" value="Inflict Critical Wounds"/>
+    <property name="Destruction5" value="Contagion"/>
+    <property name="Destruction3" value="Shatter"/>
+    <property name="Destruction1" value="Inflict Light Wounds"/>
+    <property name="CreatureClass" value="Cleric"/>
+    <property name="Trickery9" value="False Vision"/>
+    <property name="Trickery7" value="Confusion"/>
+    <property name="Trickery5" value="Nondetection"/>
+    <property name="Trickery3" value="Invisibility"/>
+    <property name="Trickery1" value="Disguise Self"/>
+    <property name="Protection9" value="Spell Resistance"/>
+    <property name="Protection7" value="Spell Immunity"/>
+    <property name="Protection5" value="Protection from Energy"/>
+    <property name="Protection3" value="Shield Other"/>
+    <property name="Animal17" value="Shapechange"/>
+    <property name="Protection1" value="Sanctuary"/>
+    <property name="Animal15" value="Summon Nature&apos;s Ally VIII"/>
+    <property name="CreatureClassType" value="Class"/>
+    <property name="Animal13" value="Animal Shapes"/>
+    <property name="Animal11" value="Antilife Shell"/>
+    <property name="Fire9" value="Fire Shield"/>
+    <property name="Fire7" value="Wall of Fire"/>
+    <property name="Fire5" value="Resist Energy"/>
+    <property name="Fire3" value="Produce Flame"/>
+    <property name="Fire1" value="Burning Hands"/>
+    <property name="Plant17" value="Shambler"/>
+    <property name="Plant15" value="Control Plants"/>
+    <property name="Plant13" value="Animate Plants"/>
+    <property name="DomainMaxSpellLevel" value="9"/>
+    <property name="Plant11" value="Repel Wood"/>
+    <property name="Luck9" value="Break Enchantment"/>
+    <property name="Luck7" value="Freedom of Movement"/>
+    <property name="Chaos9" value="Dispel Law"/>
+    <property name="Luck5" value="Protection from Energy"/>
+    <property name="Chaos7" value="Chaos Hammer"/>
+    <property name="Luck3" value="Aid"/>
+    <property name="Chaos5" value="Magic Circle against Law"/>
+    <property name="Luck1" value="Entropic Shield"/>
+    <property name="Chaos3" value="Shatter"/>
+    <property name="PerDay9" value="6|4|4|3|2|1"/>
+    <property name="source" value="null"/>
+    <property name="Features" value="Cleric"/>
+    <property name="PerDay8" value="6|4|3|3|2"/>
+    <property name="Chaos1" value="Protection from Law"/>
+    <property name="PerDay7" value="6|4|3|2|1"/>
+    <property name="PerDay6" value="5|3|3|2"/>
+    <property name="PerDay5" value="5|3|2|1"/>
+    <property name="PerDay4" value="5|3|2"/>
+    <property name="PerDay3" value="4|2|1"/>
+    <property name="PerDay2" value="4|2"/>
+    <property name="PerDay1" value="3|1"/>
+    <property name="SpellCasterUseSlots" value="true"/>
+    <property name="SpellCasterUsePools" value="false"/>
+    <property name="Skills" value="Concentration|Craft|Diplomacy|Heal|Knowledge (Arcana)|Knowledge (History)|Knowledge (Religion)|Knoweldge (The Planes)|Profession|Spellcraft"/>
+    <property name="Sun17" value="Prismatic Sphere"/>
+  </__rawProperties>
+  <syncState reference="../__traits/entry/com.mindgene.d20.common.game.trait.GenericTrait/syncState"/>
+  <idInLib>1786597051</idInLib>
+  <encrypted>false</encrypted>
+  <isEnabled>true</isEnabled>
+  <isEditable>true</isEditable>
+  <isPublic>true</isPublic>
+</com.mindgene.d20.common.game.creatureclass.CreatureClassTemplate>

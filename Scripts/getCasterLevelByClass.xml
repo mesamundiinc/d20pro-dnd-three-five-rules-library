@@ -1,0 +1,25 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Returns the total class levels found for all classes based on a named base class or variant class by name.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;b&gt;getCasterLevelByClass(&lt;i&gt;&amp;lt;base class or variant class name&amp;gt;&lt;/i&gt;);&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Segoe UI&amp;quot;;&quot;&gt;var level = getCasterLevelByClass(&quot;monk&quot;);&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getCasterLevelByClass</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function getCasterLevelByClass(className){ 
+
+    var count = 0;
+    caster.getClasses().accessClasses().forEach(function(c) { 
+        if ( (c.accessClassTemplate().accessVariantOfClass().toLowerCase() === className.toLowerCase()) || 
+            (c.accessClassTemplate().getName().toLowerCase() === className.toLowerCase()) ) 
+        {
+           count += c.accessClassTemplate().getLevel();
+        }
+    });   
+    return count; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Value</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

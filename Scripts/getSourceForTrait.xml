@@ -1,0 +1,27 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;getSourceForTrait(&quot;trait name&quot;);&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;returns the source, usually the originating class, for the named trait if it exists on the creature.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;returns 0 if unsuccessful.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getSourceForTrait</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function getSourceForTrait(traitName, target){ 
+    // get class name from trait&apos;s source field
+    print(&quot;checking &quot; + target.getName() + &quot; for trait &quot; + traitName);
+    var className = &quot;&quot;;
+    if (target.getTraitByName(traitName))
+        className = target.getTraitByName(traitName).getSource();
+            
+    print(&quot;found class with name &quot; + className);
+    if (className !== &quot;&quot;)
+        return className;
+    
+    // always return a number as Features/Spells evaluate Scripts as part of dice/math on a values node
+    return &quot;&quot;; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Utility</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

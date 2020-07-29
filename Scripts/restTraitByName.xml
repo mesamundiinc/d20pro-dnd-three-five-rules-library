@@ -1,0 +1,28 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Rest the specified trait&apos;s usage pools (Templates). This script takes a name as input and then itterates over all of the traits usage pools (tabs) and rests the usage counts.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Usage:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;restTraitByName(&lt;i&gt;&lt;font color=&quot;#ff9966&quot;&gt;&lt;b&gt;name&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;)&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Input:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;i style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;&lt;font color=&quot;#ff9966&quot;&gt;&lt;b&gt;name&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/i&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;a named traits in the format of &quot;name&quot;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;Output:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;returns 0&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Example:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">restTraitByName</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function restTraitByName(name){ 
+    print(&quot;targets &quot; + targets.length);
+    if (null !== targets)
+    {
+        targets.forEach(function(t) {
+            var trait = target.getTraitByName(name);
+            if( null !== trait)
+                trait.getPools().forEach(function(p) {
+                    p.rest(); 
+                });
+        });
+    }
+    
+    return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

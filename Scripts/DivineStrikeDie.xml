@@ -1,0 +1,32 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Lucida Grande&quot;&gt;For use when determining a cleric&apos;s Divine Strike damage increase by certain levels (8th, 14th)&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">DivineStrikeDie</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function DivineStrikeDie() {&#x0D;
+    var res = 0;&#x0D;
+    var castLv = caster.getLevel();&#x0D;
+&#x0D;
+    switch (castLv) {&#x0D;
+        case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8: case 9: case 10: case 11: case 12: case 13:&#x0D;
+        res = 1;&#x0D;
+        break;&#x0D;
+&#x0D;
+        case 14: case 15: case 16: case 17: case 18: case 19: case 20:&#x0D;
+        res = 2;&#x0D;
+        break;&#x0D;
+&#x0D;
+        default:&#x0D;
+        res = 0;&#x0D;
+        break;&#x0D;
+    }&#x0D;
+    return res;&#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Value</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

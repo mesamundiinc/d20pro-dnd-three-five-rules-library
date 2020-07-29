@@ -1,0 +1,34 @@
+<com.mindgene.d20.common.item.ItemTemplate>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">fa279f55-5ba0-4cc3-bcbf-8ba45a1db03e</id>
+  <idInLib class="int">-790082317</idInLib>
+  <level class="int">0</level>
+  <name class="string">Dart (Mwk)</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <properties class="linked-hash-map">
+    <entry>
+      <string>name</string>
+      <string>Dart (Mwk)</string>
+    </entry>
+    <entry>
+      <string>Quantity</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>weight</string>
+      <float>0.5</float>
+    </entry>
+    <entry>
+      <string>info</string>
+      <string>Weapon</string>
+    </entry>
+  </properties>
+  <public class="boolean">true</public>
+  <source class="string">Item</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+  <tab class="string">Item</tab>
+</com.mindgene.d20.common.item.ItemTemplate>

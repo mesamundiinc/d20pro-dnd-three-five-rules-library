@@ -1,0 +1,32 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">setVisible</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function setVisible(visible) { 
+    var viz = 0;
+    if (visible &gt; 0)
+        viz = 0x7fffffff; // mask none
+    if (visible &lt; 0) 
+        viz = -1;  // mask all
+    if (visible === 0)
+        viz = 0; // mask fog of war
+    
+    if (null !== targetsInPlay) {
+        targetsInPlay.forEach(function(tip) {
+                tip.setVisibilityMask(viz);
+        });
+    }
+    
+    print(&quot;Visiblity set to &quot; + viz);
+    
+    return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

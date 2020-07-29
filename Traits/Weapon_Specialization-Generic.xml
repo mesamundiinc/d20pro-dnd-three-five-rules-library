@@ -1,0 +1,17 @@
+<com.mindgene.d20.common.game.trait.GenericTrait>
+  <availableUses class="byte">0</availableUses>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <idInLib class="int">-256014320</idInLib>
+  <level class="int">0</level>
+  <maxUses class="byte">0</maxUses>
+  <name class="string">Weapon Specialization</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <public class="boolean">true</public>
+  <source class="string">Generic</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+  <tab class="string">Generic</tab>
+</com.mindgene.d20.common.game.trait.GenericTrait>

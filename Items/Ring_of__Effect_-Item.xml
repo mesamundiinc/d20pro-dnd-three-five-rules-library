@@ -1,0 +1,30 @@
+<com.mindgene.d20.common.item.ItemTemplate>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">34567112-5b9b-4633-940b-4436c1ef0a47</id>
+  <idInLib class="int">-458186047</idInLib>
+  <level class="int">0</level>
+  <name class="string">Ring of [Effect]</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <properties class="linked-hash-map">
+    <entry>
+      <string>name</string>
+      <string>Ring of [EFFECT]</string>
+    </entry>
+    <entry>
+      <string>Quantity</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>info</string>
+      <string>&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;Magic Item&lt;/body&gt;&lt;/html&gt;</string>
+    </entry>
+  </properties>
+  <public class="boolean">true</public>
+  <source class="string">Item</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">MODIFIED</syncState>
+  <tab class="string">Item</tab>
+</com.mindgene.d20.common.item.ItemTemplate>

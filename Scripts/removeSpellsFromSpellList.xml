@@ -1,0 +1,41 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">removeSpellsFromSpellList</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function removeSpellsFromSpellList(className, spells, target){ 
+    var t = target;
+    var found = null;
+    if (t.getClasses() !== undefined &amp;&amp; t.getClasses() !== null) {
+        var classes = t.getClasses().accessClasses();
+        print(&quot;found &quot; + classes.size() + &quot; classes on &quot; + t.getName() );
+        classes.forEach(function(c) {
+            if (c.getName().equalsIgnoreCase(className)) {
+                print(&quot;Found class &quot; + c.getName() + &quot; on target &quot; + t.getName());
+                found = c;
+            } else if(c.getVariant().equalsIgnoreCase(className)) {
+                print(&quot;Found class &quot; + c.getName() + &quot; on target &quot; + t.getName());
+                found = c;
+            } else {
+                print(&quot;Did not find class &quot; + className + &quot; on target &quot; + t.getName());
+            }
+        });
+    }
+    if (found !== null) {
+        spells.forEach(function(s) {
+            print(&quot;Attempting to remove &quot; + s + &quot; from &quot; + t.getName() + &quot;&apos;s possible spells&quot; );
+            found.getSpellcasting().removeFromSpells(s);        
+        });
+    } 
+
+    // always return a number as Features/Spells evaluate Scripts as part of dice/math on a values node
+    return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Utility</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

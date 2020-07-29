@@ -1,0 +1,21 @@
+<com.d20pro.temp_extraction.plugin.feature.model.pool.Pool>
+  <ammunitionType class="string">bow</ammunitionType>
+  <castAsClass class="string">None</castAsClass>
+  <castAsLevel class="int">0</castAsLevel>
+  <consumable class="boolean">true</consumable>
+  <customCost class="list"/>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <features class="list"/>
+  <fetchFeaturesFromLibrary class="boolean">true</fetchFeaturesFromLibrary>
+  <idInLib class="int">0</idInLib>
+  <isInitialized class="boolean">false</isInitialized>
+  <name class="string">Ammunition</name>
+  <public class="boolean">true</public>
+  <remainingCharges class="int">0</remainingCharges>
+  <templateName class="string">Ammunition</templateName>
+  <totalCharges class="int">1</totalCharges>
+  <usageType class="com.d20pro.temp_extraction.plugin.feature.model.enums.PoolUsageTypes">AMMO</usageType>
+  <useHigherLevel class="boolean">false</useHigherLevel>
+</com.d20pro.temp_extraction.plugin.feature.model.pool.Pool>

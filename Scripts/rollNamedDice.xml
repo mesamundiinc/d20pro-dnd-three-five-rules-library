@@ -1,0 +1,36 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: &apos;Courier New&apos;; background-color: rgb(255, 255, 255);&quot;&gt;Takes a string die equation and a named type as input.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Usage example:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;rollNamedDice(&lt;font color=&quot;#661a33&quot;&gt;2&lt;/font&gt;, &quot;&lt;font color=&quot;#1a3399&quot;&gt;d20&lt;/font&gt;&quot;, &quot;&lt;font color=&quot;#669966&quot;&gt;&lt;b&gt;Portent&lt;/b&gt;&lt;/font&gt;&quot;);&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Output to gamelog:&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#e6994d&quot;&gt;CasterName&lt;/font&gt; rolled &lt;font color=&quot;#b31a1a&quot;&gt;2&lt;/font&gt;&lt;font color=&quot;#6680e6&quot;&gt;&lt;b&gt;d20&lt;/b&gt;&lt;/font&gt;&amp;nbsp;for&amp;nbsp;&lt;font color=&quot;#80b380&quot;&gt;&lt;b&gt;Portent&lt;/b&gt;&lt;/font&gt; with a result of&amp;nbsp;&lt;font color=&quot;#ffb366&quot;&gt;7 and 14&lt;/font&gt;.&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#e6994d&quot; style=&quot;font-family: &apos;Courier New&apos;; background-color: rgb(255, 255, 255);&quot;&gt;CasterName&lt;/font&gt;&lt;span style=&quot;font-family: &apos;Courier New&apos;; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;is determined by caster.getName()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(255, 179, 102); font-family: &apos;Courier New&apos;; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;7 and 14&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &apos;Courier New&apos;; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#003333&quot;&gt;are determined by the Dice roller class rolling &lt;/font&gt;&lt;font color=&quot;#990000&quot;&gt;2&lt;/font&gt;&lt;font color=&quot;#003333&quot;&gt; &lt;/font&gt;&lt;font color=&quot;#1a3399&quot;&gt;d20&lt;/font&gt;&lt;font color=&quot;#003333&quot;&gt;.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">rollNamedDice</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function rollNamedDice(numRolls, type, name)
+{ 
+    var roll = type;
+    var rollResult = null;
+    var result = &quot;&quot;;
+    
+    for (i = 0; i &lt; numRolls; i++)
+    {
+        if (i == (numRolls - 1) &amp;&amp; numRolls &gt; 1)
+            result += &quot; and &quot;;
+        else if (i &gt; 0) 
+            result += &quot;, &quot;;
+            
+            
+        rollResult = caster.rollDice(roll);
+        result += rollResult.total();
+    }
+    
+    addToRollsLog(&quot;&quot;);
+    addToRollsLog(caster.getName() + &quot; rolled &quot; + numRolls + &quot;&quot; + roll + &quot; for &quot; + name + &quot; with a result of &quot; + result + &quot;.&quot;);
+    
+    return 0;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

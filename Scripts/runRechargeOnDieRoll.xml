@@ -1,0 +1,24 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;h3&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;runRechargeOnDieRoll(roll, targetNum)&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;A helper method designed to set recharge conditions for a given feature-&amp;gt;effect. &amp;nbsp;Hang this script call on a script node from an Effect Node to add recharge with a roll type and target number.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;This script also acts as a sample of how to build abilities which use entirely different resolution rules for rolls and such. &amp;nbsp;There is nothing to prevent your roll from being specified as 3d6 with a target number of 3 (all 1&apos;s).&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;b&gt;&lt;i&gt;roll&lt;/i&gt;&lt;/b&gt;&amp;nbsp;- (&lt;i&gt;String)&lt;/i&gt; dice statement. i.e. 3d6, 1d20, 1d20+5, etc&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;i&gt;&lt;b&gt;targetNum &lt;/b&gt;- (integer)&lt;/i&gt;&amp;nbsp;the target number which must be reached on &lt;i style=&quot;font-weight: bold;&quot;&gt;roll &lt;/i&gt;for a success and thus a recharge event.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">runRechargeOnDieRoll</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function runRechargeOnDieRoll(roll, targetNum){
+    if (feature === null || feature === undefined) return;
+    
+    var rollResult = caster.rollDice(roll);
+    var result = rollResult.total();
+    
+    if (result &gt;= targetNum)
+        feature.getSourcePool().rest();
+        
+    return result; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Utility</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

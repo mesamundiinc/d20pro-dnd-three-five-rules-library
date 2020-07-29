@@ -1,0 +1,69 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">addToLog</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">// defaults to story
+function addToLog(text){ 
+ addEntry(text, STORY);
+ return 0; 
+}
+
+function addToRollsLog(text){ 
+ addEntry(text, ROLLS);
+ return 0; 
+}
+
+function addToAttacksLog(text){ 
+ addEntry(text, Attacks);
+ return 0; 
+}
+
+function addToStoryLog(text){ 
+ addEntry(text, STORY);
+ return 0; 
+}
+
+function addToTellLog(text){ 
+ addEntry(text, TELL);
+ return 0; 
+}
+
+function addToSkillsLog(text){ 
+ addEntry(text, SKILLS);
+ return 0; 
+}
+
+function addToGameLog(text){ 
+ addEntry(text, GAME);
+ return 0; 
+}
+
+function addToSystemLog(text){ 
+ addEntry(text, SYSTEM);
+ return 0; 
+}
+
+function addToCreatureChatLog(text){ 
+ addEntry(text, CREATURE_CHAT);
+ return 0; 
+}
+
+function addToOOCLog(text){ 
+ addEntry(text, OOC);
+ return 0; 
+}
+
+function addEntry(text, type) {
+ var entry = gamelog.createEntry(text, type);
+ gamelog.addEntry(entry);
+ channels.sendGameLogEntry(entry);
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

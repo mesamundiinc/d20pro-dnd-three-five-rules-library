@@ -1,0 +1,30 @@
+<com.mindgene.d20.common.item.ItemTemplate>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">d36f346d-ca5d-4e45-b0e8-b241a72d9ac4</id>
+  <idInLib class="int">-190310335</idInLib>
+  <level class="int">0</level>
+  <name class="string">Feather Token (Anchor)</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <properties class="linked-hash-map">
+    <entry>
+      <string>name</string>
+      <string>Feather Token (Anchor)</string>
+    </entry>
+    <entry>
+      <string>Quantity</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>info</string>
+      <string>Wondrous Item (Magic)</string>
+    </entry>
+  </properties>
+  <public class="boolean">true</public>
+  <source class="string">Item</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+  <tab class="string">Item</tab>
+</com.mindgene.d20.common.item.ItemTemplate>

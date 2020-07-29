@@ -1,0 +1,34 @@
+<com.mindgene.d20.common.item.ItemTemplate>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">53aed1fe-6f1f-4b55-a872-78165e1c08cb</id>
+  <idInLib class="int">145069246</idInLib>
+  <level class="int">0</level>
+  <name class="string">Robe of [Effect]</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <properties class="linked-hash-map">
+    <entry>
+      <string>name</string>
+      <string>Robe of [EFFECT]</string>
+    </entry>
+    <entry>
+      <string>Quantity</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>weight</string>
+      <float>1.0</float>
+    </entry>
+    <entry>
+      <string>info</string>
+      <string>&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;Magic Item&lt;/body&gt;&lt;/html&gt;</string>
+    </entry>
+  </properties>
+  <public class="boolean">true</public>
+  <source class="string">Item</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">MODIFIED</syncState>
+  <tab class="string">Item</tab>
+</com.mindgene.d20.common.item.ItemTemplate>

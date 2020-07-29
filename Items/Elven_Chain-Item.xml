@@ -1,0 +1,34 @@
+<com.mindgene.d20.common.item.ItemTemplate>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">5119cd32-0623-4f25-ae60-8c64d680ecf4</id>
+  <idInLib class="int">1079577970</idInLib>
+  <level class="int">0</level>
+  <name class="string">Elven Chain</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <properties class="linked-hash-map">
+    <entry>
+      <string>name</string>
+      <string>Elven Chain</string>
+    </entry>
+    <entry>
+      <string>Quantity</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>weight</string>
+      <float>20.0</float>
+    </entry>
+    <entry>
+      <string>info</string>
+      <string>Armor &amp; Shield (Magic)</string>
+    </entry>
+  </properties>
+  <public class="boolean">true</public>
+  <source class="string">Item</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">ABSENT_IN_LIB</syncState>
+  <tab class="string">Item</tab>
+</com.mindgene.d20.common.item.ItemTemplate>

@@ -1,0 +1,118 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;TraitBonus(num, type, mod)&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">TraitBonus</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function TraitBonus(num, type, mod) {
+    
+    print(targets.length);
+    if (targets.length  === 0)
+        return 0;
+    
+    var hasValue = false;    
+    if (effect.getActionValue().getValue() &gt; 0)
+        return;
+        
+    // EXAMPLE OF CHANGING THE Log Entry Flavor Text via Script. 
+    // feature.getBehavior().setLogEntry(caster.getName() + &quot; shoots a frigid beam of blue-white light at &quot; + targets[0].getName());    
+    
+    var roll = num + &quot;d&quot; + type;
+    print(roll);
+    var rollResult = caster.rollDice(roll);
+    var result = rollResult.total();
+    
+    if (mod === undefined)
+        mod = 0;
+    
+    var level = getCasterTotalLevels();
+    var tmod = 0;
+    var label = &quot;&quot;;
+    var alabel = [];
+    var found = false;
+    var i = 0;
+    
+    // handle Potent Spellcaster
+    if (checkForTraitOnCaster(&quot;Potent Spellcaster&quot;) &amp;&amp; level &gt;= 8) 
+    {
+        tmod = getWisMod();
+        tlabel = tmod + &quot; WIS&quot;;
+        
+        found = false;
+        for(i = 0; i &lt; alabel.length; i++) {
+            if (alabel[i] == tlabel) 
+                found = true;
+        }
+        if (!found)
+        {
+            print(tlabel);
+            alabel.push(tlabel);
+        }
+            
+        mod += tmod;
+    }
+    
+    if (checkForTraitOnCaster(&quot;Sorcerous Awesomesauce&quot;))
+    {
+        tmod = getChaMod();
+        tlabel = tmod + &quot; CHA&quot;;
+        
+        found = false;
+        for(i = 0; i &lt; alabel.length; i++) {
+            if (alabel[i] == tlabel) 
+                found = true;
+        }
+        if (!found)
+        {
+            print(tlabel);
+            alabel.push(tlabel);
+        }
+            
+        mod += tmod;
+    }
+    
+    var total = result + mod;
+    
+    alabel.forEach(function(l) {
+        label += &quot; + &quot; + l;
+    })
+    
+    addToRollsLog(caster.getName() + &quot; rolled &quot; + roll +&quot; (&quot; + result + &quot;)&quot; + label + &quot; for a total of &quot; + total);
+    if (rollResult.hasIndividualRolls())
+    {
+        i = 0;
+        var rolls = &quot;&quot;;
+        rollResult.getIndividualRolls().forEach( function(r) {
+            if (i !== 0)
+                rolls +=  &quot;, &quot; + r;
+            else
+                rolls += r;
+                
+            i++;
+        });
+        addToRollsLog(&quot;individual rolls: &quot; + rolls);
+    } 
+    
+    // appendEffectDescription(alabel.join(&quot;; &quot;));
+    
+    return total; 
+}
+
+function appendEffectDescription(label) {
+    effect.setDescription( effect.getDescription() + label );
+}
+
+function checkForTraitOnCaster(name) {
+    var t = caster.getTraitByName(name);
+    if (t !== undefined)
+        return true;
+        
+    return false;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Utility</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

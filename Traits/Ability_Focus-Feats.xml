@@ -1,0 +1,19 @@
+<com.mindgene.d20.common.game.trait.GenericTrait>
+  <availableUses class="byte">0</availableUses>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">2a074a83-b0fe-4687-945b-2488196fff8c</id>
+  <idInLib class="int">615880802</idInLib>
+  <level class="int">0</level>
+  <longDescription class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;h3 id=&quot;abilityFocus&quot; style=&quot;font-size: 1.5em; margin: 20px 0px 5px; font-family: &apos;Trebuchet MS&apos;, Verdana, sans-serif; font-variant-ligatures: normal; orphans: 2; widows: 2;&quot;&gt;&lt;br&gt;&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</longDescription>
+  <maxUses class="byte">0</maxUses>
+  <name class="string">Ability Focus</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <public class="boolean">true</public>
+  <source class="string">Feats</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">MODIFIED</syncState>
+  <tab class="string">Generic</tab>
+</com.mindgene.d20.common.game.trait.GenericTrait>

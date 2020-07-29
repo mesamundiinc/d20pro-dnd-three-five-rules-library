@@ -1,0 +1,56 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Roll 1d10 for confusion results. Results are pushed to the game log.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;(NOT CURRENTLY WORKING; TBD)&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">rollForConfusion</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function rollForConfusion(){ 
+ var _roll;
+ var _rollResult;
+ var _result;
+ 
+ if (null !== targets)
+ {
+     targets.forEach(function(c) {
+         _roll = &quot;1d10&quot;;
+         _rollResult = c.rollDice(_roll);
+         
+         addToRollsLog(&quot; &quot;);
+         AddToRollsLog(c.getName() + &quot; rolled &quot; + _roll + &quot; for &quot; + result);
+     });
+ } else {
+     addToRollsLog(&quot;Failed to attach to targets&quot;);
+ }
+ 
+ /*var _roll = &quot;d10&quot;;
+ var _rollResult = target.rollDie(roll);
+ var _result = rollResult.total();
+ 
+ rollDieToLogFor(_result, &quot;Confusion&quot;);
+ 
+ if (_result == 1)
+ {
+     addToGameLog(target.getName() + &quot;uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn&apos;t take an action this turn.&quot;);
+ }
+ else if (_result &lt;= 6) // 2 - 6
+ {
+     addToGameLog(target.getName() + &quot;doesn&apos;t move or take actions this turn.&quot;);
+ }
+ else if (_result &lt;= 8) // 7 - 8 
+ {
+     addToGameLog(target.getName() + &quot;uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.&quot;);
+ }
+ else // 9 - 10 
+ {
+     addToGameLog(target.getName() + &quot;can act and move normally.&quot;);
+ }*/
+ 
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

@@ -1,0 +1,34 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Adds a light to the selected target(s).&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;r (double) is the radius of the light in grid units. (typically 1.0 = 5&apos;)&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;b&gt;&lt;i&gt;addLightToTargets(1.0);&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">addLightToTargets</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function addLightToTargets(r){ 
+ if (null !== targetsInPlay)
+ {
+    targetsInPlay.forEach(function(c) {
+       var lt = light.createLight();
+       lt.setName(c.getTemplate().getName());
+       if (r === undefined || r === null)
+          lt.setRadius(4);
+       else 
+          lt.setRadius(r);
+       
+       c.getLights().add(lt);
+       c.getTethers().add(lt);
+       
+       map.getLights().add(lt); 
+       c.notifyMobMoved();
+    });
+ }
+ 
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

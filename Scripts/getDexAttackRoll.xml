@@ -1,0 +1,29 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Author: KrilionGD&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Returns a dex based attack DC.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getDexAttackRoll</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function getDexAttackRoll(){&#x0D;
+    &#x0D;
+    var rollResult = caster.rollDice(&quot;1d20&quot;);&#x0D;
+    var result = 0;&#x0D;
+    // test for the existence of one or more targets &#x0D;
+    if (targets.length !== 0) {&#x0D;
+        result = rollResult.total();&#x0D;
+        print(&apos;Die Roll: &apos; + result);&#x0D;
+        result = result + getDexMod();&#x0D;
+        print(&apos;Roll with Dex mod: &apos; + result);&#x0D;
+        result = result + getCasterProfBonus();&#x0D;
+        print(&apos;Roll with all modifiers : &apos; + result); &#x0D;
+    }&#x0D;
+    // always return a number as Features/Spells evaluate Scripts as part of dice/math on a values node&#x0D;
+    return result; &#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Getters</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

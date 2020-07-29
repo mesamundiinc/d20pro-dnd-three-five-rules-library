@@ -1,0 +1,65 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;h3&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;&lt;b&gt;&lt;i&gt;pushTargetAwayFromCaster( distance )&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;The method provides a mechanism to shift one or more targets away from the current location of the caster.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;Targets pushed with this script are translated and could thus also trigger additional templates or effects if they pass through the required spaces.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot; size=&quot;4&quot;&gt;&lt;i&gt;&lt;b&gt;distance&lt;/b&gt;&amp;nbsp;- &lt;/i&gt;Double value in grid units (typically 1.0 = 5&apos;)&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">pushTargetAwayFromCaster</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function pushTargetAwayFromCaster(d) { 
+ // find the caster&apos;s In Play Object
+ var center = casterInPlay.getLocation(); // location of caster
+ if (null !== targetsInPlay) {
+     targetsInPlay.forEach(function(c) {
+         if (d === undefined || d &lt; 0) 
+            d = 0;
+         var loc = c.getLocation(); // location of target
+         var dx = loc.x - center.x;
+         var dy = loc.y - center.y;
+         print(&quot;delta &quot; + dx + &quot;, &quot; + dy);
+         var x = 0;
+         var y = 0;
+         if (dx &lt; 0) { // negative
+            x = dx + (d * -1) ;
+         } else if (dx &gt; 0) {
+            x = dx + d;
+         }
+         
+         if (dy &lt; 0) {
+            y = dy + (d * -1);
+         } else if (dy &gt; 0) {
+            y = dy + d; 
+         }
+         
+         var w = map.getSize().width -1; 
+         var h = map.getSize().height -1;
+         print(&quot;map: &quot; + w + &quot;, &quot; + h);
+         if (loc.x + x &gt; w ) {
+             x = (w +1 + d) - (loc.x +1 + d);
+         }
+         if (loc.y + y &gt; h) {
+             var h = map.getSize().height;
+             y = (h + d) - (loc.y +1 + d);
+         }
+         
+         if (loc.x + x &lt; 0) {
+             x = d - loc.x;
+         }
+         if (loc.y + y &lt; 0) {
+             y = d - loc.y;
+         }
+         print(&quot;translate: &quot; + x + &quot;, &quot; + y);
+         var to = c.getPoint(x, y);
+         
+         c.translate(to);
+         //c.setLocation(pnt);
+         c.notifyMobMoved();
+     });
+ }
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

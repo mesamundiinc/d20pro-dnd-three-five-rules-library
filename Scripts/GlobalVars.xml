@@ -1,0 +1,26 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">GlobalVars</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">var ROLLS = &quot;Dice Rolls&quot;;
+var ATTACKS = &quot;Attacks&quot;;
+var STORY = &quot;Story&quot;;
+var TELL = &quot;Tells&quot;;
+var SKILLS = &quot;Skills and Abilities&quot;;
+var GAME = &quot;Game Events&quot;;
+var SYSTEM = &quot;System&quot;;
+var CREATURE_CHAT = &quot;Creature Chat&quot;;
+var OOC = &quot;OOC&quot;;
+
+function GlobalVars(){ 
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Globals</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

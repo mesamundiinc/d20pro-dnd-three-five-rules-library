@@ -1,0 +1,33 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Returns the target&apos;s ability mod for a given &lt;i&gt;stat&lt;/i&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getTargetAbilityScore</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function getTargetAbilityScore(stat){ 
+    if (null == target) return 0;
+    switch (stat) {
+        case &quot;Str&quot;:
+            return target.accessAbilityScoreMod(0);
+        case &quot;Dex&quot;:
+            return target.accessAbilityScoreMod(1);
+        case &quot;Con&quot;:
+            return target.accessAbilityScoreMod(2);
+        case &quot;Int&quot;:
+            return target.accessAbilityScoreMod(3);
+        case &quot;Wis&quot;:
+            return target.accessAbilityScoreMod(4);
+        case &quot;Cha&quot;:
+            return target.accessAbilityScoreMod(5);
+        default:
+            console.log(&quot;Error accessing target&apos;s ability score.&quot;);
+            return 0;
+    }
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Getters</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

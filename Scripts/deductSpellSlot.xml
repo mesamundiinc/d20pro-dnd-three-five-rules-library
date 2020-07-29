@@ -1,0 +1,40 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Author: KrilionGD&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Segoe UI&amp;quot;;&quot;&gt;deduct a spell slot based on feature level.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">deductSpellSlot</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function deductSpellSlot(cname){&#x0D;
+    var flevel = getFeatureLevel();&#x0D;
+    var fcost = feature.getBehavior().getFeature().getCost();&#x0D;
+    var cslotx = 0;&#x0D;
+    var cslotr = 0;    &#x0D;
+    &#x0D;
+    caster.getClasses().accessClasses().forEach(function(c) { &#x0D;
+        if ( (c.accessClassTemplate().accessVariantOfClass().toLowerCase() === cname.toLowerCase()) || &#x0D;
+            (c.accessClassTemplate().getName().toLowerCase() === cname.toLowerCase()) ) &#x0D;
+        {&#x0D;
+           cslotx = c.getSpellcasting().getSpellsCast();&#x0D;
+           cslotr = c.getSpellcasting().countSpellsRemaining(flevel); &#x0D;
+           &#x0D;
+            if(cslotx[flevel] === undefined || cslotr === 0)&#x0D;
+                    return;&#x0D;
+                    &#x0D;
+            cslotx[flevel] += fcost;&#x0D;
+        &#x0D;
+            if(cslotr &gt;= 1) {&#x0D;
+                c.getSpellcasting().setSpellsCast(cslotx);&#x0D;
+            }           &#x0D;
+            return;&#x0D;
+        }&#x0D;
+    });     &#x0D;
+    &#x0D;
+    return;&#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Utility</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

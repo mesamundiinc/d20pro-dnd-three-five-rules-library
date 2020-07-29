@@ -1,0 +1,89 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;b style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;&lt;i&gt;transport()&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Like teleport, transport moves the targets of the first template and moves them to the location of the second template.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Teleport does not translate a creature through the spaces between the two targets. Additionally, teleport can be used to create &quot;portals&quot; between maps as templates can exist on different maps in the open map list.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Please note that if you close a map with an existing &quot;portal&quot; using this feature, you will lose the link under the current build. The ability to save maps to the library with this feature attached will be available in a future release as a dedicate tool.&lt;/font&gt;&lt;/p&gt;&lt;div&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">transport</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function transport(){ 
+    print(&quot;Using transport.js&quot;);
+    //if (undefined === target || null === target) return 0;
+    if (targetsInPlay.size() &lt;= 0) {
+        print(&quot;no targets found&quot;);
+        return 0; 
+    } else { 
+        print(&quot;targets &quot; + targetsInPlay.size());
+    }
+    
+    targetsInPlay.forEach(function(c) {
+        var t0;
+        var t1;
+        var m0;
+        var m1;
+        
+        var loc = c.getLocation();
+
+        if (feature.getTemplates().get(0).isCellCovered(loc)) {
+            print(&quot;found creature in template 0&quot;);
+            t0 = feature.getTemplates().get(0).getOrigin();
+            t1 = feature.getTemplates().get(1).getOrigin();
+            m0 = feature.getTemplates().get(0).getMapUIN();
+            m1 = feature.getTemplates().get(1).getMapUIN();
+        } else {
+            print(&quot;found creature in template 1&quot;);
+            t0 = feature.getTemplates().get(1).getOrigin();
+            t1 = feature.getTemplates().get(0).getOrigin();
+            m0 = feature.getTemplates().get(1).getMapUIN();
+            m1 = feature.getTemplates().get(0).getMapUIN();
+        }
+
+        var p0 = c.getPoint( Math.round(t0.x), Math.round(t0.y) );
+        var p1 = c.getPoint( Math.round(t1.x), Math.round(t1.y) );
+    
+        var dx = p1.x - p0.x;
+        var dy = p1.y - p0.y;
+
+        var pnt = c.getPoint( loc.x + dx, loc.y + dy );
+        
+        // check map UIN&apos;s
+        print(m0 + &quot;, &quot; + m1);
+        if (parseInt(m0) !== parseInt(m1)) {
+            var dest;
+            
+            // first find the current map&apos;s creature and remove it.
+            for(var i = 0; i &lt; maps.length; i++) {
+                if ( parseInt(m0) == parseInt(maps[i].getUIN()) )
+                    maps[i].removeCreature(c);
+            }
+            
+            // now find the destination map and move the creature there.
+            for(var i = 0; i &lt; maps.length; i++) {
+                print(maps[i].getUIN());
+                if (parseInt(m1) == parseInt(maps[i].getUIN())) {
+                    print(&quot;moving from &quot; + m0 + &quot; to &quot; + m1);
+                    print(&quot;for ... &quot; + m1 + &quot; &amp; &quot; + maps[i].getUIN());
+                    if (!maps[i].getCreatures().contains(c)) {
+                        //gameNative.moveCreatureToLimbo(c);
+                        gameNative.moveCreatureToMap(c, maps[i], pnt);
+                    } else {
+                        print(&quot;creature is already on target map&quot;);
+                    }
+                    
+                    // removeaas from limbo...
+                    //c.setMapUIN(maps[i].getUIN());
+                    //c.setMapName(maps[i].getName());
+                }
+            }
+        } else {
+            c.setLocation(pnt);
+        }
+        c.notifyMobMoved();
+    });
+ return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

@@ -1,0 +1,49 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;takes a list of spells as input.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">addSpellsToSpellList</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function addSpellsToSpellList(className, spells, target){ 
+    // test for the existence of one or more targets 
+    var t = target;
+    print(&quot;checking &quot; + t.getName() + &quot; for class &quot; + className );
+    var found = null;    
+    if (t.getClasses() !== undefined &amp;&amp; t.getClasses() !== null) {
+        var classes = t.getClasses().accessClasses();
+        print(&quot;found &quot; + classes.size() + &quot; classes on &quot; + t.getName() );
+        classes.forEach(function(c) {
+            if (c.getName().equalsIgnoreCase(className)) {
+                print(&quot;Found class &quot; + c.getName() + &quot; on target &quot; + t.getName());
+                found = c;
+            } else if(c.getVariant().equalsIgnoreCase(className)) {
+                print(&quot;Found class &quot; + c.getName() + &quot; on target &quot; + t.getName());
+                found = c;
+            } else {
+                print(&quot;Did not find class &quot; + className + &quot; on target &quot; + t.getName());
+            }
+        });
+    }
+    
+    // add the spells from the list of spells provided
+    if (found !== null) {
+        print(&quot;found &quot; + found.getName() + &quot; class on &quot; + t.getName() );
+
+        spells.forEach(function(s) {
+            print(&quot;Attempting to add &quot; + s + &quot; to &quot; + t.getName() + &quot;&apos;s possible spells&quot; );
+           found.getSpellcasting().addToSpells(s); 
+        });
+    } else {
+        
+    }
+        
+    // always return a number as Features/Spells evaluate Scripts as part of dice/math on a values node
+    return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Utility</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

@@ -1,0 +1,60 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Courier New&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Uses the globals for log channels set in GlobalVars&lt;/font&gt;&lt;/p&gt;&lt;pre style=&quot;background-color: rgb(43, 43, 43); color: rgb(169, 183, 198); font-family: &apos;Courier New&apos;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;ROLLS &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Dice Rolls&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;ATTACKS &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Attacks&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;STORY &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Story&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;TELL &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Tells&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;SKILLS &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Skills and Abilities&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;GAME &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Game Events&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;SYSTEM &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;System&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;CREATURE_CHAT &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Creature Chat&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;OOC &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;OOC&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">rollDieToLogFor</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function rollDieToLogFor(roll, reason){ 
+    var rollResult;    
+    var result;
+
+    if (roll == &quot;ad&quot;) {
+        roll = &quot;1d20&quot;;
+        rollResult = caster.rollDice(roll);
+    
+        addToRollsLog(&quot;&quot;);
+        
+        var dice = rollResult.getDice();
+        
+        var r1 = rollResult.getDice().simpleRoll();
+        var r2 = rollResult.getDice().simpleRoll();
+        
+        addToRollsLog(caster.getName() + &quot; rolled &quot; + r1 + &quot; / &quot; + r2 + &quot; for Advantage/Disadvantage against &quot; + reason);
+        
+        // this can also be extended to actually check against a stat or difficulty -- excellent for meta
+        // challenges where all you really need are a &quot;did it work&quot; type of result.
+        
+    } else {
+        rollResult = caster.rollDice(roll);
+        
+        result = rollResult.total();
+        
+        addToRollsLog(&quot;&quot;);
+        addToRollsLog(caster.getName() + &quot; rolled &quot; + roll + &quot; for &quot; + result);
+        
+        if (rollResult.hasIndividualRolls())
+        {
+            var i = 0;
+            addToRollsLog(caster.getName() + &quot; rolled &quot; + roll + &quot; for a total of &quot; + result + &quot; against &quot; + reason);
+            var rolls = &quot;&quot;;
+            rollResult.getIndividualRolls().forEach( function(r) {
+                if (i !== 0)
+                    rolls +=  &quot;, &quot; + r;
+                else
+                    rolls += r;
+                    
+                i++;
+            });
+            addToRollsLog(&quot;individual rolls: &quot; + rolls);
+        }
+    }
+    
+    return 0;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

@@ -1,0 +1,32 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Sets the visibilty fo the target to either Visible, Invisible, or Dynamic.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Usage:&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;setTargetsVisibility( &quot;&lt;font color=&quot;#ff9966&quot;&gt;visible&lt;/font&gt;&quot; | &quot;&lt;font color=&quot;#ff9966&quot;&gt;invisible&lt;/font&gt;&quot; | &quot;&lt;font color=&quot;#ff9966&quot;&gt;dynamic&lt;/font&gt;&quot; )&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Input:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;String value of either&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;&quot;&lt;/span&gt;&lt;font color=&quot;#ff9966&quot; style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;visible&lt;/font&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;font color=&quot;#ff9966&quot; style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;invisible&lt;/font&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;&quot; or &quot;&lt;/span&gt;&lt;font color=&quot;#ff9966&quot; style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;dynamic&lt;/font&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;&quot;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &apos;Segoe UI&apos;;&quot;&gt;defaults to &quot;visible&quot; if no input is selected.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Example:&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;setTargetsVisibility(&quot;&lt;font color=&quot;#ff9966&quot;&gt;invisible&lt;/font&gt;&quot;)&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">setTargetsVisibility</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function setTargetsVisibility(type){ 
+    if (null !== targetsInPlay &amp;&amp; targetsInPlay.length &gt; 0) {
+        print(&quot;attempting to toggle visibiliy to &quot; + type);
+        // &quot;visible&quot;
+        var mask = 2147483647;
+        if (type.toLowerCase() === &quot;invisible&quot;)
+            mask = 0;
+        if (type.toLowerCase() === &quot;dynamic&quot;)
+            mask = -1;
+        
+        targetsInPlay.forEach( function(c) {
+            print(c.getName() + &quot;: toggle visibiliy to &quot; + mask);
+            c.setVisibilityMask( mask );
+        });
+    } else {
+        print(&quot;no targets found&quot;);
+    }
+    return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Setters</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

@@ -1,0 +1,19 @@
+<com.mindgene.d20.common.game.trait.GenericTrait>
+  <availableUses class="byte">0</availableUses>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <equipped class="boolean">false</equipped>
+  <id class="string">f213f57b-228a-4935-aef1-e14c7eabad85</id>
+  <idInLib class="int">-558763365</idInLib>
+  <level class="int">0</level>
+  <longDescription class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;h3 id=&quot;wingover&quot; style=&quot;font-size: 1.5em; margin: 20px 0px 5px;&quot;&gt;&lt;br&gt;&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</longDescription>
+  <maxUses class="byte">0</maxUses>
+  <name class="string">Wingover</name>
+  <pools class="list"/>
+  <product class="string">D&amp;D 3.5 Core Rulebook</product>
+  <public class="boolean">true</public>
+  <source class="string">Feats</source>
+  <syncState class="com.d20pro.temp_extraction.plugin.feature.model.sync.SyncState">MODIFIED</syncState>
+  <tab class="string">Generic</tab>
+</com.mindgene.d20.common.game.trait.GenericTrait>

@@ -1,0 +1,22 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;Written by Kriliongd&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Arial&quot;&gt;Point Spend output to log.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">PointSpend</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">function PointSpend(){&#x0D;
+   if (targets.length  !== 0)  {    &#x0D;
+        var daPoint = feature.getBehavior().getFeature().getCost();&#x0D;
+        var label = &quot;&quot; + caster.getName() + &quot; Spends/burns &quot; + daPoint + &quot; point(s) from a Pool.&quot;;&#x0D;
+        //addToRollsLog(label);&#x0D;
+        effect.setLog(label);&#x0D;
+        return 0; &#x0D;
+    }&#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Action</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

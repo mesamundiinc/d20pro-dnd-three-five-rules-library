@@ -1,0 +1,35 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&amp;nbsp;* pool - is the String name of the Trait containing the pool. this function will ONLY fetch the first pool of a given trait.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&amp;nbsp;* cls &amp;nbsp;- is the class name in string format&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=&quot;Segoe UI&quot;&gt;&amp;nbsp;* stat - is the numeric position of the stat such that 0 STR, 1 DEX, 2 CON, 3 INT, 4 WIS and 5 CHA.&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">setTraitPoolForTargets</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">/**
+ * pool - is the String name of the Trait containing the pool. this function will ONLY fetch the first pool of a given trait.
+ * cls  - is the class name in string format
+ * stat - is the numeric position of the stat such that 0 STR, 1 DEX, 2 CON, 3 INT, 4 WIS and 5 CHA.
+ */
+function setTraitPoolForTargets(traitname, poolname, classname, stat){ 
+    if (null !== targets)
+    {
+        targets.forEach(function(c) {
+            var trait = c.getTraitByName(traitname);
+            if (trait !== undefined) {
+                for(i = 0; i &lt; trait.getPools().size(); i++) {
+                    if (trait.getPools().get(i).getName() == poolname) {
+                        trait.getPools().get(0).setRemainingCharges(c.accessAbilityScoreMod(stat) + (c.getClasses().accessClass(classname).getLevel()/2));
+                        trait.getPools().get(0).setTotalCharges(c.accessAbilityScoreMod(stat) + (c.getClasses().accessClass(classname).getLevel()/2));
+                    }
+                }
+            }
+        });
+    }
+    return 0; 
+}</script>
+  <showWhenEncrypted class="boolean">false</showWhenEncrypted>
+  <source class="string">Setter</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>

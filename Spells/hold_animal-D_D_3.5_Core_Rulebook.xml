@@ -1,0 +1,87 @@
+<com.d20pro.temp_extraction.plugin.feature.model.FeatureBehavior>
+  <attacks class="list"/>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <feature class="com.mindgene.d20.common.game.spell.GenericSpell">
+    <cost class="int">0</cost>
+    <featureName class="string">hold animal</featureName>
+    <featureType class="string">Spell</featureType>
+    <level class="byte">2</level>
+  </feature>
+  <featureEffects class="list">
+    <FeatureEffect>
+      <action class="string">Effect</action>
+      <actionType class="string">None</actionType>
+      <actionValue class="com.d20pro.temp_extraction.plugin.feature.model.ValueOrExpression">
+        <value class="int">0</value>
+        <valueOrExpression class="int">0</valueOrExpression>
+      </actionValue>
+      <applyImmediately class="boolean">true</applyImmediately>
+      <applyOnSavePassed class="boolean">false</applyOnSavePassed>
+      <cancelCondition class="com.d20pro.temp_extraction.plugin.feature.model.enums.TriggerCancelCondition">None</cancelCondition>
+      <cancelForTargetIfSaved class="boolean">false</cancelForTargetIfSaved>
+      <delayType class="com.d20pro.temp_extraction.plugin.feature.model.enums.TriggerDelayType">NONE</delayType>
+      <excludeCaster class="boolean">false</excludeCaster>
+      <healing class="boolean">false</healing>
+      <ignore class="boolean">false</ignore>
+      <modifyGroup class="string">Inert</modifyGroup>
+      <modifyTarget class="string">None</modifyTarget>
+      <modifyType class="string">None</modifyType>
+      <processingId class="int">0</processingId>
+      <resolved class="boolean">false</resolved>
+      <rollEachTime class="boolean">false</rollEachTime>
+      <statuses class="set">
+        <string>None</string>
+      </statuses>
+      <targetCaster class="boolean">false</targetCaster>
+      <totalRecalculationRequired class="boolean">false</totalRecalculationRequired>
+      <trigger class="com.d20pro.temp_extraction.plugin.feature.model.enums.FeatureEffectTrigger">None</trigger>
+      <useSave class="com.d20pro.temp_extraction.plugin.feature.model.enums.FeatureEffectUseSave">None</useSave>
+    </FeatureEffect>
+  </featureEffects>
+  <featureUsage class="com.d20pro.temp_extraction.plugin.feature.model.usage.FeatureUsage">
+    <actionWord class="string">casts</actionWord>
+    <autoapply class="boolean">false</autoapply>
+    <description class="string"></description>
+    <duration class="com.d20pro.temp_extraction.plugin.feature.model.ValueOrExpression">
+      <value class="int">-1</value>
+      <valueOrExpression class="int">-1</valueOrExpression>
+    </duration>
+    <durationMode class="string">instant</durationMode>
+    <notes class="string"></notes>
+    <primarySave class="com.d20pro.temp_extraction.plugin.feature.model.usage.SavingThrowDataHolder">
+      <delta class="int">0</delta>
+      <rolled class="boolean">false</rolled>
+      <saveDC class="com.d20pro.temp_extraction.plugin.feature.model.ValueOrExpression">
+        <value class="int">-1</value>
+        <valueOrExpression class="int">-1</valueOrExpression>
+      </saveDC>
+      <saveType class="byte">0</saveType>
+    </primarySave>
+    <secondarySave class="com.d20pro.temp_extraction.plugin.feature.model.usage.SavingThrowDataHolder">
+      <delta class="int">0</delta>
+      <rolled class="boolean">false</rolled>
+      <saveDC class="com.d20pro.temp_extraction.plugin.feature.model.ValueOrExpression">
+        <value class="int">-1</value>
+        <valueOrExpression class="int">-1</valueOrExpression>
+      </saveDC>
+      <saveType class="byte">0</saveType>
+    </secondarySave>
+    <spellDataHolder class="com.d20pro.temp_extraction.plugin.feature.model.usage.FeatureUsageSpellDataHolder">
+      <castAs class="boolean">false</castAs>
+      <overcasting class="boolean">false</overcasting>
+      <skipCostDebiting class="boolean">false</skipCostDebiting>
+      <spellLevel class="int">0</spellLevel>
+      <useMult class="boolean">false</useMult>
+    </spellDataHolder>
+    <type class="string">At Will</type>
+    <useActionWord class="boolean">true</useActionWord>
+  </featureUsage>
+  <group class="string">D&amp;D 3.5 Core Rulebook</group>
+  <idInLib class="int">0</idInLib>
+  <name class="string">hold animal</name>
+  <public class="boolean">true</public>
+  <shortDescription class="string"></shortDescription>
+  <source class="string">D20PRO</source>
+</com.d20pro.temp_extraction.plugin.feature.model.FeatureBehavior>

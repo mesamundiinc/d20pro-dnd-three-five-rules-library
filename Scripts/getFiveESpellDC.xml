@@ -1,0 +1,60 @@
+<com.d20pro.temp_extraction.plugin.feature.model.script.Script>
+  <description class="string">&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;Return calcaulted spell DC for 5th edition D&amp;amp;D&lt;/body&gt;&lt;/html&gt;</description>
+  <editable class="boolean">true</editable>
+  <enabled class="boolean">true</enabled>
+  <encrypted class="boolean">false</encrypted>
+  <idInLib class="int">0</idInLib>
+  <name class="string">getFiveESpellDC</name>
+  <product class="string">D20PRO Core</product>
+  <public class="boolean">true</public>
+  <script class="string">/**&#x0D;
+ * returns the DC for a Dungeons &amp; Dragons spell. &#x0D;
+ * If an ability is specified, we&apos;ll use that abilities &#x0D;
+ * mod instead of the class mod.&#x0D;
+ */&#x0D;
+&#x0D;
+function getFiveESpellDC()&#x0D;
+{ &#x0D;
+    var ability = &quot;INT&quot;; // default to int... will expand soon&#x0D;
+    var abilityMod = 0;&#x0D;
+    &#x0D;
+    if (null === getSCMod()) {&#x0D;
+        if (ability.toUpperCase().localeCompare(&quot;STR&quot;))&#x0D;
+            abilityMod = caster.accessAbilityScoreMod(0);&#x0D;
+        else if (ability.toUpperCase().localeCompare(&quot;DEX&quot;))&#x0D;
+            abilityMod = caster.accessAbilityScoreMod(1);&#x0D;
+        else if (ability.toUpperCase().localeCompare(&quot;CON&quot;))&#x0D;
+            abilityMod = caster.accessAbilityScoreMod(2);        &#x0D;
+        else if (ability.toUpperCase().localeCompare(&quot;INT&quot;))&#x0D;
+            abilityMod = caster.accessAbilityScoreMod(3);&#x0D;
+        else if (ability.toUpperCase().localeCompare(&quot;WIS&quot;))&#x0D;
+            abilityMod = caster.accessAbilityScoreMod(4);&#x0D;
+        else if (ability.toUpperCase().localeCompare(&quot;CHA&quot;))&#x0D;
+            abilityMod = caster.accessAbilityScoreMod(5);&#x0D;
+    } else {&#x0D;
+        abilityMod = getSCMod(); // If the casting class has a spellcasting class type, override the stat&#x0D;
+    } &#x0D;
+    &#x0D;
+    &#x0D;
+    var dc = 8 + abilityMod + getCasterProfBonus();&#x0D;
+    print(&apos;dc: &apos; + dc);&#x0D;
+    &#x0D;
+    return dc;&#x0D;
+}&#x0D;
+&#x0D;
+function getSCMod() {&#x0D;
+    print(&apos;---------spellcastingClassAbilityMod----------------------------&apos;);&#x0D;
+    var className = feature.getBehavior().getFeatureUsage().getSpellDataHolder().getSpellcastingClassName();&#x0D;
+    &#x0D;
+    print(&apos; classname is &apos; + className);&#x0D;
+    if (null === className)&#x0D;
+        return null; &#x0D;
+        &#x0D;
+    var mod = caster.accessAbilityScoreMod( classBinder.accessClass(className).accessSpellcasting().accessAbility() );&#x0D;
+    &#x0D;
+    return (mod != -127) ? mod : 0;&#x0D;
+}</script>
+  <showWhenEncrypted class="boolean">true</showWhenEncrypted>
+  <source class="string">Value</source>
+  <valid class="boolean">true</valid>
+</com.d20pro.temp_extraction.plugin.feature.model.script.Script>
